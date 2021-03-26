@@ -138,35 +138,29 @@ select {
   transition-duration: 0.3s;
 }
 
-nav ul {
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  font-family: Open Sans;
-  list-style: none;
-  text-align: center;
-  width: 100%;
+.header-navigation .nav-links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  font-weight: 500;
+}
+.header-navigation .nav-links li {
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 21px;
+  transition: background-color 0.25s ease;
+}
+.header-navigation .nav-links li a {
+  color: var(--clr-dark-500);
+}
+.header-navigation .nav-links li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .nav-hidden {
   display: none;
-}
-
-nav ul a {
-  transition-duration: 0.5s;
-  text-decoration: none;
-  font-size: 3em;
-  line-height: 1.5;
-  width: 100%;
-  display: block;
-  font-family: sans-serif;
-}
-
-nav ul a:hover {
-  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .menu-section.on {
