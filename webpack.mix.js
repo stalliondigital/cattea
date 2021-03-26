@@ -17,6 +17,7 @@ mix.js("resources/js/app.js", "public/js")
         require("tailwindcss"),
     ])
     .sass("resources/scss/app.scss", "public/css")
+    .copy("resources/fonts", "public/fonts")
     .browserSync({
         proxy: "cattea.test",
     });

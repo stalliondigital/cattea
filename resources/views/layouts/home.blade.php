@@ -31,12 +31,19 @@
         <header>
             {{-- Navigation Menu Button --}}
             <div class="menu-section">
-                <button id="menu-toggle" class="menu-toggle mb-5  p-3 text-white inline rounded-lg">
+                <button id="menu-toggle" class="menu-toggle mb-5 p-3 text-white inline rounded-lg">
                     <div class="bar-one"></div>
-                    {{-- <div class="bar-two"></div> --}}
-                    <div class="bar-three"></div>
+                    <div class="bar-two"></div>
                 </button>
                 <nav class="header-navigation nav-hidden z-50">
+                    <div class="navigation-upper">
+                        <h3>Menu</h3>
+                        <div class="logo-long">
+                            <h5>Cattea</h5>
+                            <img src="{{ asset('img/logostyle/cattea-logo-sm.png') }}" alt="">
+                            <h5>Artistry</h5>
+                        </div>
+                    </div>
                     <ul class="nav-links" role="navigation">
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li><a href="{{ route('about') }}">About</a></li>

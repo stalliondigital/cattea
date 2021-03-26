@@ -1,3 +1,87 @@
+@font-face {
+  font-family: "Avenir LT Std";
+  src: local("Avenir LT Std 45 Book Oblique"), local("AvenirLTStd-BookOblique"), url(/fonts/AvenirLTStd-BlackOblique.woff2?5f034eb428ae645426baa92a4f82ba36) format("woff2"), url(/fonts/AvenirLTStd-BookOblique.woff?b22a3b8bf2190f58ae25ca0bd9e07abd) format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir LT Std";
+  src: local("Avenir LT Std 45 Book"), local("AvenirLTStd-Book"), url(/fonts/AvenirLTStd-Book.woff2?791d24ff78ae0d97f6b616a0057a11cb) format("woff2"), url(/fonts/AvenirLTStd-Book.woff?3175b201baa5ac896887143cf304279a) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir LT Std";
+  src: local("Avenir LT Std 85 Heavy Oblique"), local("AvenirLTStd-HeavyOblique"), url(/fonts/AvenirLTStd-HeavyOblique.woff2?d9becd1a8d2a1113b1541011c5749982) format("woff2"), url(/fonts/AvenirLTStd-HeavyOblique.woff?edbcdc50976050d3c398debf96364e99) format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir LT Std";
+  src: local("Avenir LT Std 95 Black"), local("AvenirLTStd-Black"), url(/fonts/AvenirLTStd-Black.woff2?f10b249ce4a83274eb3d86c387b103e6) format("woff2"), url(/fonts/AvenirLTStd-Black.woff?b14682a02df8b419c75b48f61cb08cb9) format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir LT Std";
+  src: local("Avenir LT Std 85 Heavy"), local("AvenirLTStd-Heavy"), url(/fonts/AvenirLTStd-Heavy.woff2?acea40c43260be7d0673d17c29fe5c87) format("woff2"), url(/fonts/AvenirLTStd-Heavy.woff?119b4c8124341e4fbec2b69e05c67de1) format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir LT Std";
+  src: local("Avenir LT Std 95 Black Oblique"), local("AvenirLTStd-BlackOblique"), url(/fonts/AvenirLTStd-BlackOblique.woff2?5f034eb428ae645426baa92a4f82ba36) format("woff2"), url(/fonts/AvenirLTStd-BlackOblique.woff?d6838ee06bef5b706673ab3f23e345ad) format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir LT Std";
+  src: local("Avenir LT Std 55 Oblique"), local("AvenirLTStd-Oblique"), url(/fonts/AvenirLTStd-Oblique.woff2?da25c501ce86e4d0287f68786167d6ea) format("woff2"), url(/fonts/AvenirLTStd-Oblique.woff?f7d2d3a2cdcab909f600c4faf8042017) format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir LT Std";
+  src: local("Avenir LT Std 35 Light Oblique"), local("AvenirLTStd-LightOblique"), url(/fonts/AvenirLTStd-LightOblique.woff2?6098a147ebb4dfde0fad899930d66924) format("woff2"), url(/fonts/AvenirLTStd-LightOblique.woff?44aef17f92ebc458114873271dd63a71) format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir LT Std";
+  src: local("Avenir LT Std 35 Light"), local("AvenirLTStd-Light"), url(/fonts/AvenirLTStd-Light.woff2?08f926e9834c767885d297f74f8c4e4c) format("woff2"), url(/fonts/AvenirLTStd-Light.woff?2f2591e0062ccebf16326163af1399c5) format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir LT Std";
+  src: local("Avenir LT Std 55 Roman"), local("AvenirLTStd-Roman"), url(/fonts/AvenirLTStd-Roman.woff2?5c4975bcfa65ddf19945a6f654d88887) format("woff2"), url(/fonts/AvenirLTStd-Roman.woff?d193ab392d147d94a5477909909ca4e4) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir LT Std";
+  src: local("Avenir LT Std 65 Medium"), local("AvenirLTStd-Medium"), url(/fonts/AvenirLTStd-Medium.woff2?f8335b6381e869bfb47c8924da2c3689) format("woff2"), url(/fonts/AvenirLTStd-Medium.woff?5451ed004bc1b90dd7c5227a5707b32f) format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Avenir LT Std";
+  src: local("Avenir LT Std 65 Medium Oblique"), local("AvenirLTStd-MediumOblique"), url(/fonts/AvenirLTStd-MediumOblique.woff2?fcf25dfc513a174ec668e7672402b2f3) format("woff2"), url(/fonts/AvenirLTStd-MediumOblique.woff?4e0d6d4a0178e78cfcdeec8a101a51c3) format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
 :root {
   --clr-primary-100: #a7ebf1;
   --clr-primary-200: #96e7ee;
@@ -114,6 +198,7 @@ select {
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
   width: 50px;
   height: 50px;
+  display: inline;
   cursor: pointer;
 }
 
@@ -121,13 +206,12 @@ select {
   transform: rotate(45deg) translate(2px, 2.5px);
 }
 
-#menu-toggle.on .bar-three {
+#menu-toggle.on .bar-two {
   transform: rotate(-45deg) translate(4px, -4px);
 }
 
 .bar-one,
-.bar-two,
-.bar-three {
+.bar-two {
   border-radius: 1px;
   width: 80%;
   height: 3px;
@@ -138,9 +222,39 @@ select {
   transition-duration: 0.3s;
 }
 
-.header-navigation .nav-links {
+.header-navigation {
+  display: inline;
+}
+.header-navigation .logo-long {
   display: flex;
-  flex-flow: row nowrap;
+  color: var(--clr-dark-500);
+  justify-content: center;
+  align-items: center;
+}
+.header-navigation .logo-long h5 {
+  font-family: "Barlow";
+  text-transform: uppercase;
+  letter-spacing: 0.105em;
+  font-size: 1.6rem;
+}
+.header-navigation .logo-long img {
+  margin: 0 1rem;
+}
+.header-navigation .navigation-upper {
+  display: inline;
+  justify-content: center;
+  align-items: center;
+}
+.header-navigation .navigation-upper h3 {
+  display: inline;
+  color: var(--clr-dark-500);
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+.header-navigation .nav-links {
+  margin-top: 10rem;
+  display: flex;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   font-size: 3rem;
@@ -158,6 +272,29 @@ select {
 .header-navigation .nav-links li:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
+.header-navigation .nav-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  text-align: center;
+  margin-top: 5rem;
+}
+.header-navigation .nav-social-links h3 {
+  flex: 100%;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+.header-navigation .nav-social-links li {
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  margin: 1rem;
+  transition: background-color 0.25s ease;
+}
+.header-navigation .nav-social-links li:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
 
 .nav-hidden {
   display: none;
@@ -168,12 +305,12 @@ select {
   width: 100%;
   height: 100%;
   display: block;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(116, 116, 116, 0.3);
   position: absolute;
   transition: background-color 0.25s ease;
 }
 .menu-section.on .header-navigation {
-  color: white;
+  color: var(--clr-dark-500);
 }
 
 .on {
