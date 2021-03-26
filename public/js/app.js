@@ -3813,6 +3813,8 @@ var menuSection = document.querySelectorAll(".menu-section");
 var navigation = document.querySelectorAll(".header-navigation");
 
 menuToggle.onclick = function () {
+  this.classList.toggle("on");
+
   var _iterator = _createForOfIteratorHelper(menuSection),
       _step;
 

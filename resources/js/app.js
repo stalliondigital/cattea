@@ -6,6 +6,7 @@ let menuToggle = document.getElementById("menu-toggle");
 let menuSection = document.querySelectorAll(".menu-section");
 let navigation = document.querySelectorAll(".header-navigation");
 menuToggle.onclick = function () {
+    this.classList.toggle("on");
     for (let x of menuSection) {
         x.classList.toggle("on");
     }

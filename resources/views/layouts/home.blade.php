@@ -31,10 +31,10 @@
         <header>
             {{-- Navigation Menu Button --}}
             <div class="menu-section">
-                <button id="menu-toggle" class="menu-toggle mb-5 bg-black p-3 text-white inline rounded-lg">X
-                    {{-- <div class="bar-one"></div>
-                    <div class="bar-two"></div>
-                    <div class="bar-three"></div> --}}
+                <button id="menu-toggle" class="menu-toggle mb-5  p-3 text-white inline rounded-lg">
+                    <div class="bar-one"></div>
+                    {{-- <div class="bar-two"></div> --}}
+                    <div class="bar-three"></div>
                 </button>
                 <nav class="header-navigation nav-hidden z-50">
                     <ul class="nav-links" role="navigation">
