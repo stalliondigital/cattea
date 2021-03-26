@@ -1,3 +1,15 @@
-require('./bootstrap');
+require("./bootstrap");
 
-require('alpinejs');
+require("alpinejs");
+
+let menuToggle = document.getElementById("menu-toggle");
+let menuSection = document.querySelectorAll(".menu-section");
+let navigation = document.querySelectorAll(".header-navigation");
+menuToggle.onclick = function () {
+    for (let x of menuSection) {
+        x.classList.toggle("on");
+    }
+    for (let y of navigation) {
+        y.classList.toggle("nav-hidden");
+    }
+};

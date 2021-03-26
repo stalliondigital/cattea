@@ -1,0 +1,12 @@
+@use '../abstracts' as *;
+
+:root {
+    // Setup CSS custom property for color values in scss maps:
+    @each $color, $shades in $colors {
+        @each $shade, $value in $shades {
+            --clr-#{$color}-#{$shade}: #{$value};
+        }
+    }
+
+
+} 
