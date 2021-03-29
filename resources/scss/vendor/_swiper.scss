@@ -16,12 +16,6 @@ padding: 1rem;
 }
   
 .swiper-nav {
-    // position: absolute;
-    // bottom: 0;
-    // left: 50%;
-    // // right: -2rem;
-    display: flex;
-    background: orange;
     .swiper-pagination {
         color: white;
         font-weight: 600;
@@ -34,7 +28,6 @@ padding: 1rem;
             
         }
     }
-
     .swiper-button-prev, .swiper-button-next {
         color: white;
         background: rgba(white, 0.25);

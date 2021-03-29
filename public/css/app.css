@@ -327,13 +327,16 @@ select {
   position: absolute;
   left: 0;
   top: 0;
-  transition: background-color 0.25s ease;
+  transition: background-color 1s ease;
+  transition: -webkit-backdrop-filter 1s ease;
+  transition: backdrop-filter 1s ease;
+  transition: backdrop-filter 1s ease, -webkit-backdrop-filter 1s ease;
 }
-@supports ((-webkit-backdrop-filter: blur(1.5px)) or (backdrop-filter: blur(1.5px))) {
+@supports ((-webkit-backdrop-filter: blur(25px)) or (backdrop-filter: blur(25px))) {
   .menu-section.on {
-    background-color: rgba(202, 202, 202, 0.3);
-    -webkit-backdrop-filter: blur(1.5px);
-    backdrop-filter: blur(1.5px);
+    background-color: rgba(244, 244, 244, 0.5);
+    -webkit-backdrop-filter: blur(25px);
+    backdrop-filter: blur(25px);
   }
 }
 .menu-section.on .header-navigation {
@@ -390,6 +393,68 @@ select {
   margin-left: auto;
 }
 
+.main-title {
+  background: rgba(255, 255, 255, 0.7);
+  color: var(--clr-dark-500);
+  z-index: 999;
+  position: absolute;
+  left: 0;
+  top: 15%;
+  text-align: left;
+  padding: 3rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  width: 55%;
+}
+@supports ((-webkit-backdrop-filter: blur(8px)) or (backdrop-filter: blur(8px))) {
+  .main-title {
+    background: rgba(255, 255, 255, 0.45);
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+  }
+}
+.main-title h1 {
+  display: inline-block;
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+.main-title ul {
+  display: inline-flex;
+  flex-flow: row nowrap;
+  margin-bottom: 1rem;
+}
+.main-title ul li {
+  align-items: baseline;
+  font-size: 1.45rem;
+  padding: 0.5rem 1.8rem;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  border-radius: 8px;
+}
+.main-title ul li:first-child {
+  background: var(--clr-dark-500);
+  color: var(--clr-light-100);
+}
+.main-title ul li:last-child {
+  background: rgba(255, 255, 255, 0.8);
+}
+.main-title ul li a {
+  margin: 0;
+  padding: 0;
+}
+.main-title p {
+  display: inline-block;
+  font-size: 0.9rem;
+}
+.main-title p a {
+  border-bottom: 1px dotted var(--clr-dark-500);
+  transition: color 0.25s ease;
+}
+.main-title p a:hover, .main-title p a:focus {
+  color: var(--clr-dark-300);
+  border-color: var(--clr-dark-300);
+}
+
 .swiper-box {
   background: var(--clr-light-100);
   box-shadow: 0px 0px 89px -31px rgba(0, 0, 0, 0.25);
@@ -404,10 +469,6 @@ select {
   border-radius: 1.5rem;
 }
 
-.swiper-nav {
-  display: flex;
-  background: orange;
-}
 .swiper-nav .swiper-pagination {
   color: white;
   font-weight: 600;

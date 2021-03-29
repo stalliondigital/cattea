@@ -17,6 +17,16 @@
                 <div class="swiper-slide"><img src="{{ asset('img/slideshow/slide-5.png') }}" alt=""></div>
                 <div class="swiper-slide"><img src="{{ asset('img/slideshow/slide-6.png') }}" alt=""></div>
             </div>
+            <div class="main-title">
+                <h1>Vancouver based lifestyle, pet and landscape photography</h1>
+                <br>
+                <ul>
+                    <li><a href="{{ route('contact') }}">Book Session</a></li>
+                    <li><a href="{{ route('portfolio') }}">View Work</a></li>
+                </ul>
+                <br>
+                <p>Completed a session? <a href="#linktopixieset">Click here </a>to download your images.</p>
+            </div>
             <!-- If we need navigation buttons -->
             <nav class="swiper-nav">
                 <div class="swiper-button-prev"><i class="fas fa-long-arrow-alt-left"></i></div>
@@ -38,6 +48,11 @@
             lazy: true,
             parallax: true,
             speed: 600,
+            effect: 'fade',
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
 
             // If we need pagination
             pagination: {
