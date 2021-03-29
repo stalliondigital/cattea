@@ -1,13 +1,18 @@
+// Hamburger Menu Related
 #menu-toggle {
     margin: 1rem;
     border-radius: 50%;
     background: var(--clr-dark-500);
-    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
     width: 50px;
     height: 50px;
     display: inline;
     // position: absolute;
+    transition: background 0.25s ease;
     cursor: pointer;
+    &:hover {
+        background: rgb(58, 58, 58);
+    }
 }
 #menu-toggle.on .bar-one {
     -moz-transform: rotate(45deg) translate(2px, 2.5px);
@@ -125,12 +130,15 @@
 }
 
 .menu-section.on {
+    padding: 2rem;
     z-index: 10;
     width: 100%;
     height: 100%;
     display: block;
-    background-color: rgba(202, 202, 202, 0.9);
+    background-color: rgba(202, 202, 202, 0.97);
     position: absolute;
+    left: 0;
+    top: 0;
     transition: background-color 0.25s ease;
 
     @supports (
@@ -148,4 +156,62 @@
 
 .on {
     display: block;
+}
+
+// Header Nav General
+.header-main {
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    .header-social-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: auto;
+        li {
+            margin: 0.5rem;
+            &:hover {
+                a {
+                    color: var(--clr-dark-400);
+                }
+            }
+        }
+
+    }
+
+    .header-logo a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        // margin-right: auto;
+        span {
+            color: var(--clr-dark-500);
+            font-family: "Barlow", sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.105em;
+            font-size: 1.2rem;
+            transition: color 0.25s ease;
+        }
+        img {
+            margin: 0.5rem;
+            transition: opacity 0.25s ease;
+        }
+
+        &:hover {
+            span {
+                color: var(--clr-dark-400);
+            }
+            img {
+                opacity: 80%;
+            }
+
+        }
+    }
+
+    .header-cta-button {
+        margin-left: auto;
+    }
 }

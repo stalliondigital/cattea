@@ -191,15 +191,32 @@ select {
   font-family: "Avenir LT Std";
 }
 
+.header-cta-button {
+  background-color: var(--clr-dark-500);
+  color: var(--clr-light-100);
+  padding: 0.7rem 1.5rem;
+  border-radius: 6rem;
+  transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+}
+.header-cta-button:hover, .header-cta-button:focus {
+  transform: scale(1.05);
+  box-shadow: 0px 16px 25px rgba(0, 0, 0, 0.15);
+}
+
 #menu-toggle {
   margin: 1rem;
   border-radius: 50%;
   background: var(--clr-dark-500);
-  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
   width: 50px;
   height: 50px;
   display: inline;
+  transition: background 0.25s ease;
   cursor: pointer;
+}
+#menu-toggle:hover {
+  background: #3a3a3a;
 }
 
 #menu-toggle.on .bar-one {
@@ -301,12 +318,15 @@ select {
 }
 
 .menu-section.on {
+  padding: 2rem;
   z-index: 10;
   width: 100%;
   height: 100%;
   display: block;
-  background-color: rgba(202, 202, 202, 0.9);
+  background-color: rgba(202, 202, 202, 0.97);
   position: absolute;
+  left: 0;
+  top: 0;
   transition: background-color 0.25s ease;
 }
 @supports ((-webkit-backdrop-filter: blur(1.5px)) or (backdrop-filter: blur(1.5px))) {
@@ -322,6 +342,57 @@ select {
 
 .on {
   display: block;
+}
+
+.header-main {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.header-main .header-social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: auto;
+}
+.header-main .header-social-links li {
+  margin: 0.5rem;
+}
+.header-main .header-social-links li:hover a {
+  color: var(--clr-dark-400);
+}
+.header-main .header-logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.header-main .header-logo a span {
+  color: var(--clr-dark-500);
+  font-family: "Barlow", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.105em;
+  font-size: 1.2rem;
+  transition: color 0.25s ease;
+}
+.header-main .header-logo a img {
+  margin: 0.5rem;
+  transition: opacity 0.25s ease;
+}
+.header-main .header-logo a:hover span {
+  color: var(--clr-dark-400);
+}
+.header-main .header-logo a:hover img {
+  opacity: 80%;
+}
+.header-main .header-cta-button {
+  margin-left: auto;
+}
+
+.swiper-container {
+  width: 600px;
+  height: 300px;
 }
 /*! tailwindcss v2.0.4 | MIT License | https://tailwindcss.com */
 

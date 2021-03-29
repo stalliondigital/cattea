@@ -17,6 +17,8 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
+    {{--  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />  --}}
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     @livewireStyles
 
@@ -28,7 +30,7 @@
 
     <div class="">
 
-        <header>
+        <header class="header-main">
             {{-- Navigation Menu Button --}}
             <div class="menu-section">
                 <button id="menu-toggle" class="menu-toggle mb-5 p-3 text-white inline rounded-lg">
@@ -74,24 +76,26 @@
             </div>
 
             {{-- Social Links --}}
-            {{-- <ul class="header-social-links">
+            <ul class="header-social-links">
                 <li><a target="_blank" href="https://facebook.com/CatteaArtistry"><i class="fab fa-facebook"></i><span
                             class="sr-only">Facebook</span></a></li>
                 <li><a target="_blank" href="https://instagram.com/cattea_artistry"><i
                             class="fab fa-instagram"></i><span class="sr-only">Instagram</span></a></li>
                 <li><a target="_blank" href="mailto:info@cattea.ca"><i class="far fa-envelope "></i><span
                             class="sr-only">Email</span></a></li>
-            </ul> --}}
+            </ul>
 
             {{-- Header Logo --}}
-            {{-- <div class="header-logo flex items-center">
-                <span>CATTEA</span>
-                <img src="{{ asset('img/logostyle/cattea-logo-sm.png') }}" alt="">
-                <span>ARTISTRY</span>
-            </div> --}}
+            <div class="header-logo flex items-center">
+                <a href="{{ route('home') }}">
+                    <span>CATTEA</span>
+                    <img src="{{ asset('img/logostyle/cattea-logo-sm.png') }}" alt="">
+                    <span>ARTISTRY</span>
+                </a>
+            </div>
 
             {{-- Get In Touch Button --}}
-            {{-- <a class="btn btn-round" href="{{ route('contact') }}">Get in Touch</a> --}}
+            <div class="header-cta-button"><a class="btn btn-round" href="{{ route('contact') }}">Get in Touch</a></div>
         </header>
 
         <main>
@@ -102,6 +106,11 @@
 
     @stack('modals')
 
+    {{--  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>  --}}
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      
+      @yield('swiper')
     @livewireScripts
 </body>
 

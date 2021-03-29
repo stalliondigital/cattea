@@ -14,3 +14,8 @@ menuToggle.onclick = function () {
         y.classList.toggle("nav-hidden");
     }
 };
+
+import SwiperCore, { Navigation, Pagination } from "swiper/core";
+import "swiper/swiper-bundle.css";
+
+SwiperCore.user([Navigation, Pagination]);
