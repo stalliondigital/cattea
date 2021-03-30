@@ -185,7 +185,8 @@
                 <h3>How long before I receive my fully edited images and do you provide digital files or prints?</h3>
                 <p>Retouching and color grading can take up to 10 business days. If you would like to put in a rush order
                     for your images, we can arrange that for a supplementary fee. After post production, your photos will be
-                    uploaded and available for download. If you would like to have prints of your photos, we can provide you
+                    uploaded and <a href="#link-to-pixieset">available for download</a>. If you would like to have prints of
+                    your photos, we can provide you
                     with high quality prints for an additional fee. We can discuss what you are looking for before or after
                     the session. </p>
             </div>
@@ -206,7 +207,12 @@
                 </p>
             </div>
         </div>
+        <p class="bg-gray-100 p-10 rounded-xl text-center mt-20 text-2xl">If you have any more questions, feel free to <a
+                class="text-link" href="{{ route('contact') }}">contact
+                me</a></p>
     </section>
+
+
 
 
 @endsection

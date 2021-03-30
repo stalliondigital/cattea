@@ -61,10 +61,10 @@
         a {
         border-bottom: 1px dotted var(--clr-dark-500);
         transition: color 0.25s ease;
-        &:hover, &:focus {
+            &:hover, &:focus {
             color: var(--clr-dark-300);
             border-color: var(--clr-dark-300);
-        }
+            }
         }
     }
 
@@ -295,9 +295,13 @@
                 color: rgba(37, 31, 31, 0.5);
             }
             a {
-                // add
-                color: red;
-            }
+                border-bottom: 1px dotted var(--clr-dark-500);
+                transition: color 0.25s ease;
+                    &:hover, &:focus {
+                    color: var(--clr-dark-300);
+                    border-color: var(--clr-dark-300);
+                    }
+                }
 
         }
     }

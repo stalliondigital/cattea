@@ -17,7 +17,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
-    {{--  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />  --}}
+    {{-- <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" /> --}}
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
     @livewireStyles
@@ -95,22 +95,56 @@
             </div>
 
             {{-- Get In Touch Button --}}
-            <div class="header-cta-button"><a class="btn btn-round" href="{{ route('contact') }}">Get in Touch</a></div>
+            <div class="header-cta-button"><a class="btn btn-round" href="{{ route('contact') }}">Get in Touch</a>
+            </div>
         </header>
 
         <main>
             @yield('content')
         </main>
 
+        <footer class="footer-main">
+            <div class="footer-main-content">
+                <div class="footer-left">
+                    <div class="footer-logo">
+                        <img src="{{ asset('img/logostyle/cattea-logo-sm.png') }}" alt="cattea artistry logo">
+                        <h5>Cattea Artistry</h5>
+                    </div>
+                    <p>Vancouver based lifestyle, pet and landscape photography</p>
+                    <ul>
+                        <li><a target="_blank" href="https://facebook.com/CatteaArtistry"><i
+                                    class="fab fa-facebook"></i>
+                                <span class="sr-only">Facebook</span>
+                            </a></li>
+                        <li><a target="_blank" href="https://instagram.com/cattea_artistry"><i
+                                    class="fab fa-instagram"></i>
+                                <span class="sr-only">Instagram</span>
+                            </a></li>
+                        <li><a href="mailto:info@cattea.ca"><i class="far fa-envelope"></i>
+                                <span class="sr-only">E-Mail</span>
+                            </a></li>
+                    </ul>
+                </div>
+                <div class="footer-right"></div>
+            </div>
+            <div class="footer-notes">
+                <p>
+                    &copy; {{ now()->year }} <a class="text-link" href="{{ route('home') }}">Cattea Artistry</a>,
+                    All Rights
+                    Reserved &middot; Made with <i class="far fa-heart"></i> by <a class="text-link"
+                        href="https://stalliondigital.ca">Stallion Digital</a>
+                </p>
+            </div>
+        </footer>
+
     </div>
 
     @stack('modals')
 
-    {{--  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>  --}}
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
-      
-      @yield('swiper')
+
+    @yield('swiper')
     @livewireScripts
 </body>
 

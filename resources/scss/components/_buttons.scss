@@ -20,3 +20,12 @@
         box-shadow: 0px 16px 25px rgba(0, 0, 0, 0.15);
     }
 }
+
+a.text-link {
+    border-bottom: 1px dotted var(--clr-dark-500);
+    transition: color 0.25s ease;
+        &:hover, &:focus {
+        color: var(--clr-dark-300);
+        border-color: var(--clr-dark-300);
+        }
+}
