@@ -151,6 +151,12 @@
         h4 {
             max-width: 50%;
         }
+        a {
+            transition: transform 0.25s ease;
+            &:hover {
+                transform: scale(1.05);
+            }
+        }
     }
 
     .specialty-cards {
@@ -202,6 +208,64 @@
                 &:hover, &:focus {
                     background-color: var(--clr-dark-500);
                     color: var(--clr-light-100);
+                }
+            }
+        }
+    }
+}
+
+.pricing-section {
+    header {
+        margin-bottom: 2rem;
+        margin-top: 2rem;
+    }
+
+    .pricing-cards {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        .pricing-card {
+            flex: 1;
+            margin: 1rem;
+            padding: 1rem 3rem;
+            text-align: center;
+            display: flex;
+            flex-flow: column nowrap;
+            transition: transform 1s ease;
+            &:hover {
+                transform: scale(1.03);
+            }
+            h5 {
+                font-size: 1.35rem;
+                padding: 1rem;
+            }
+
+            h3 {
+                font-weight: 900;
+                font-size: 4.4rem;
+                letter-spacing: -3px;
+            }
+
+            h6 {
+                font-size: 1.2rem;
+                color: rgba(37, 31, 31, 0.5);
+                text-transform: uppercase;
+            }
+
+            a {
+                border-radius: 18px;
+                display: block;
+                margin: 1rem 0rem;
+                padding: 1rem 2rem;
+                background: #f4f4f5;
+                color: rgba(37, 31, 31, 0.8);
+                font-size: 1.25rem;
+                transition: color 0.25s ease, background-color 0.25s ease;
+                &:hover, &:focus {
+                    background: rgba(37, 31, 31, 0.8);
+                    color: #f4f4f5;
                 }
             }
         }

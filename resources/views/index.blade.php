@@ -97,7 +97,7 @@
             <h4 class="section-subtitle">Although we capture photographs of a variety of types, we specialize in lifestyle,
                 pets, astrophotography and
                 landscape.</h4>
-            <a class="btn mt-5 inline-block" href="">View Portfolio</a>
+            <a class="btn mt-5 inline-block" href="{{ route('portfolio') }}">View Portfolio</a>
         </header>
         <div class="specialty-cards mt-20">
             <div class="card specialty-card">
@@ -126,6 +126,38 @@
         </div>
 
 
+    </section>
+
+    <section class="mt-10 mb-10 ml-20 mr-10 pricing-section">
+        <header>
+            <h2 class="section-title">Interested in Shooting with Me?</h2>
+            <h4 class="section-subtitle">Simple and transparent pricing</h4>
+        </header>
+        <div class="pricing-cards">
+            {{-- Lifestyle Session Pricing Card --}}
+            <div class="card pricing-card">
+                <h5>Lifestyle Session</h5>
+                <h3>&dollar;300</h3>
+                <h6>Per hour</h6>
+                <a href="{{ route('contact') }}">Contact</a>
+            </div>
+
+            {{-- Pet Photo Session Pricing Card --}}
+            <div class="card pricing-card">
+                <h5>Pet Photo Session</h5>
+                <h3>&dollar;150</h3>
+                <h6>Per hour</h6>
+                <a href="{{ route('contact') }}">Contact</a>
+            </div>
+
+            {{-- Brand Photo Session Pricing Card --}}
+            <div class="card pricing-card">
+                <h5>Brand Photo Session</h5>
+                <h3>&dollar;50</h3>
+                <h6>Per hour</h6>
+                <a href="{{ route('contact') }}">Contact</a>
+            </div>
+        </div>
     </section>
 
 
