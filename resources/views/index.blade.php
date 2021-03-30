@@ -91,7 +91,7 @@
         </div>
     </section>
 
-    <section class="mt-10 mb-10 ml-20 mr-10 specialties-section">
+    <section class="mt-10 mb-10 ml-20 mr-10 specialties-section" id="specialty">
         <header>
             <h2 class="section-title">Our Specialties</h2>
             <h4 class="section-subtitle">Although we capture photographs of a variety of types, we specialize in lifestyle,

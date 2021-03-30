@@ -125,9 +125,27 @@
                             </a></li>
                     </ul>
                 </div>
-                <div class="footer-right"></div>
+                <div class="footer-right">
+                    <ul>
+                        <li>Company</li>
+                        <li><a href="{{ route('about') }}">About</a></li>
+                        <li><a href="{{ route('contact') }}">Contact</a></li>
+                        <li><a href="{{ route('home') }}#specialty">Specialty</a></li>
+                    </ul>
+                    <ul>
+                        <li>Info</li>
+                        <li><a href="{{ route('home') }}#faq">FAQ</a></li>
+                        <li><a href="{{ route('home') }}#process">Process</a></li>
+                        <li><a href="{{ route('home') }}#pricing">Pricing</a></li>
+                    </ul>
+                    <ul>
+                        <li>Work</li>
+                        <li><a href="{{ route('portfolio') }}">Portfolio</a></li>
+                        <li><a href="#link-to-pixieset">Client Gallery</a></li>
+                    </ul>
+                </div>
             </div>
-            <div class="footer-notes">
+            <div class="footer-main-notes">
                 <p>
                     &copy; {{ now()->year }} <a class="text-link" href="{{ route('home') }}">Cattea Artistry</a>,
                     All Rights
