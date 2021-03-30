@@ -504,7 +504,8 @@ a.text-link:hover, a.text-link:focus {
 .footer-main-notes {
   color: rgba(37, 31, 31, 0.5);
   text-align: left;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  padding-top: 0;
 }
 .footer-main-notes p {
   border-top: 1px solid rgba(196, 196, 196, 0.15);
