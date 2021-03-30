@@ -448,6 +448,10 @@ select {
   margin-top: 1rem;
   margin-right: 1rem;
   border-radius: 8px;
+  transition: transform 0.25s ease;
+}
+.main-title ul li:hover {
+  transform: scale(1.035);
 }
 .main-title ul li:first-child {
   background: var(--clr-dark-500);
@@ -475,16 +479,22 @@ select {
 
 .process-cards {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: center;
-  padding: 1rem;
+  align-items: stretch;
+  padding: 1.25rem;
+  width: 100%;
 }
 .process-cards .process-card {
-  padding: 1rem;
+  padding: 1.25rem;
+  margin: 1rem;
+  flex: 1;
+  transition: transform 0.25s ease-out;
 }
 .process-cards .process-card-header {
   display: flex;
   flex-flow: row nowrap;
+  align-items: center;
 }
 .process-cards .process-card-header img {
   background: var(--clr-light-200);
@@ -496,6 +506,33 @@ select {
   font-size: 1.25rem;
   margin-left: 1rem;
 }
+.process-cards .process-card-header h6 {
+  margin-left: auto;
+  background: var(--clr-dark-500);
+  color: var(--clr-light-100);
+  padding: 0.4rem;
+  border-radius: 50%;
+  font-weight: 900;
+  font-size: 0.8rem;
+  align-content: center;
+}
+.process-cards .process-card-content p {
+  color: rgba(37, 31, 31, 0.5);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+.process-cards .process-card-content p a {
+  transition: color 0.25s ease, border-color 0.25s ease;
+  border-bottom: 1.5px dotted rgba(37, 31, 31, 0.5);
+}
+.process-cards .process-card-content p a:hover {
+  color: var(--clr-dark-200);
+  border-color: var(--clr-dark-200);
+}
+.process-cards .process-card:hover {
+  transform: scale(1.03);
+}
+
 .swiper-box {
   background: var(--clr-light-100);
   box-shadow: 0px 0px 89px -31px rgba(0, 0, 0, 0.25);

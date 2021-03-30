@@ -37,6 +37,10 @@
             margin-top: 1rem;
             margin-right: 1rem;
             border-radius: 8px;
+            transition: transform 0.25s ease;
+            &:hover {
+                transform: scale(1.035);
+            }
             &:first-child {
                 background: var(--clr-dark-500);
                 color: var(--clr-light-100);
@@ -69,17 +73,23 @@
 
 .process-cards {
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: center;
-    // align-items: center;
-    padding: 1rem;
+    align-items: stretch;
+    padding: 1.25rem;
+    width: 100%;
 
 
     .process-card {
-        padding: 1rem;
+        padding: 1.25rem;
+        margin: 1rem;
+        flex: 1;
+        transition: transform 0.25s ease-out;
+
         &-header {
             display: flex;
             flex-flow: row nowrap;
+            align-items: center;
             img {
                 background: var(--clr-light-200);
                 padding: 0.45rem;
@@ -94,13 +104,38 @@
             }
 
             h6 {
-            
-  
+                margin-left: auto;
+                // height: auto;
+                // width: 38px;
+                background: var(--clr-dark-500);
+                color: var(--clr-light-100);
+                padding: 0.4rem;
+                border-radius: 50%;
+                font-weight: 900;
+                font-size: 0.8rem;
+                align-content: center;
+
             }
         }
 
         &-content {
-            
+            p {
+                color: rgba(37, 31, 31, 0.5);
+                padding: 1rem;
+                margin-top: 1rem;
+                a {
+                    transition: color 0.25s ease, border-color 0.25s ease;
+                    border-bottom: 1.5px dotted rgba(37, 31, 31, 0.5);
+                    &:hover {
+                        color:var(--clr-dark-200);
+                        border-color: var(--clr-dark-200);
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            transform: scale(1.03);
         }
     }
 }
