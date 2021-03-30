@@ -101,27 +101,27 @@
         </header>
         <div class="specialty-cards mt-20">
             <div class="card specialty-card">
-                <img src="{{ asset('img/slideshow/slide-3.png') }}" alt="pets">
+                <img loading="lazy" src="{{ asset('img/specialty/pets.jpg') }}" alt="pets">
                 <h5>Pets</h5>
-                <a href="{{ asset('portfolio') }}#pets">View Examples</a>
+                <a href="{{ route('portfolio') }}#pets">View Examples</a>
             </div>
 
             <div class="card specialty-card">
-                <img src="{{ asset('img/slideshow/slide-3.png') }}" alt="astrophotography">
+                <img loading="lazy" src="{{ asset('img/specialty/astrophotography.jpg') }}" alt="astrophotography">
                 <h5>Astrophotography</h5>
-                <a href="{{ asset('portfolio') }}#astrophotography">View Examples</a>
+                <a href="{{ route('portfolio') }}#astrophotography">View Examples</a>
             </div>
 
             <div class="card specialty-card">
-                <img src="{{ asset('img/slideshow/slide-3.png') }}" alt="lifestyle">
+                <img loading="lazy" src="{{ asset('img/specialty/lifestyle.jpg') }}" alt="lifestyle">
                 <h5>Lifestyle</h5>
-                <a href="{{ asset('portfolio') }}#lifestyle">View Examples</a>
+                <a href="{{ route('portfolio') }}#lifestyle">View Examples</a>
             </div>
 
             <div class="card specialty-card">
-                <img src="{{ asset('img/slideshow/slide-3.png') }}" alt="landscape">
+                <img loading="lazy" src="{{ asset('img/specialty/landscape.jpg') }}" alt="landscape">
                 <h5>Landscape</h5>
-                <a href="{{ asset('portfolio') }}#landscape">View Examples</a>
+                <a href="{{ route('portfolio') }}#landscape">View Examples</a>
             </div>
         </div>
 
