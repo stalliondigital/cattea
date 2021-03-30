@@ -139,3 +139,53 @@
         }
     }
 }
+
+.specialties-section {
+    header {
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        h4 {
+            max-width: 50%;
+        }
+    }
+
+    .specialty-cards {
+        
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 3rem;
+
+        .specialty-card {
+            flex: 1 1 30%;
+            margin: 1rem;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: center;
+            justify-content: center;
+
+            img {
+                border-radius: 38px;
+            }
+
+            h5 {
+                // display: inline;
+                padding: 1.25rem;
+                margin: 0.5rem 0;
+            }
+
+            a {            
+                padding: 1.25rem;
+                margin: 0.5rem 0;
+                margin-left: auto;
+            }
+        }
+    }
+}

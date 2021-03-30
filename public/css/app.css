@@ -203,6 +203,14 @@ select {
   color: var(--clr-dark-300);
 }
 
+.btn {
+  font-size: 1rem;
+  padding: 0.5rem 1.15rem;
+  border-radius: 8px;
+  background-color: var(--clr-dark-500);
+  color: var(--clr-light-100);
+}
+
 .header-cta-button {
   background-color: var(--clr-dark-500);
   color: var(--clr-light-100);
@@ -531,6 +539,47 @@ select {
 }
 .process-cards .process-card:hover {
   transform: scale(1.03);
+}
+
+.specialties-section header {
+  text-align: center;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.specialties-section header h4 {
+  max-width: 50%;
+}
+.specialties-section .specialty-cards {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 3rem;
+}
+.specialties-section .specialty-cards .specialty-card {
+  flex: 1 1 30%;
+  margin: 1rem;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.specialties-section .specialty-cards .specialty-card img {
+  border-radius: 38px;
+}
+.specialties-section .specialty-cards .specialty-card h5 {
+  padding: 1.25rem;
+  margin: 0.5rem 0;
+}
+.specialties-section .specialty-cards .specialty-card a {
+  padding: 1.25rem;
+  margin: 0.5rem 0;
+  margin-left: auto;
 }
 
 .swiper-box {

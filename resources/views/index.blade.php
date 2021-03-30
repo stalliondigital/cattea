@@ -34,9 +34,9 @@
         </div>
     </div>
 
-    <div class="mt-10 ml-20 mr-10 process-section">
-        <h2 class="section-title">Our Process</h2>
-        <h4 class="section-subtitle">4 Easy Steps</h4>
+    <section class="mt-10 ml-10 mr-10 process-section">
+        <h2 class="ml-10 section-title">Our Process</h2>
+        <h4 class="ml-10 section-subtitle">4 Easy Steps</h4>
         <div class="process-cards">
             <div class="card process-card">
                 <div class="process-card-header">
@@ -89,7 +89,44 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section class="mt-10 mb-10 ml-20 mr-10 specialties-section">
+        <header>
+            <h2 class="section-title">Our Specialties</h2>
+            <h4 class="section-subtitle">Although we capture photographs of a variety of types, we specialize in lifestyle,
+                pets, astrophotography and
+                landscape.</h4>
+            <a class="btn mt-5 inline-block" href="">View Portfolio</a>
+        </header>
+        <div class="specialty-cards mt-20">
+            <div class="card specialty-card">
+                <img src="{{ asset('img/slideshow/slide-3.png') }}" alt="pets">
+                <h5>Pets</h5>
+                <a href="{{ asset('portfolio') }}#pets">View Examples</a>
+            </div>
+
+            <div class="card specialty-card">
+                <img src="{{ asset('img/slideshow/slide-3.png') }}" alt="astrophotography">
+                <h5>Astrophotography</h5>
+                <a href="{{ asset('portfolio') }}#astrophotography">View Examples</a>
+            </div>
+
+            <div class="card specialty-card">
+                <img src="{{ asset('img/slideshow/slide-3.png') }}" alt="lifestyle">
+                <h5>Lifestyle</h5>
+                <a href="{{ asset('portfolio') }}#lifestyle">View Examples</a>
+            </div>
+
+            <div class="card specialty-card">
+                <img src="{{ asset('img/slideshow/slide-3.png') }}" alt="landscape">
+                <h5>Landscape</h5>
+                <a href="{{ asset('portfolio') }}#landscape">View Examples</a>
+            </div>
+        </div>
+
+
+    </section>
 
 
 @endsection
