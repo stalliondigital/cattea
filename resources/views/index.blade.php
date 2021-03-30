@@ -160,6 +160,54 @@
         </div>
     </section>
 
+    <section class="mt-20 mb-10 ml-20 mr-10 faq-section">
+        <header class="text-center">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+        </header>
+        <div class="faq-items">
+            <div class="faq-item">
+                <h3>What happens before my session?</h3>
+                <p>All photographs are tailored to your specific needs. Before we commence your photo session, we like to
+                    discuss what makes you tick such as your likes, styles and outfit colours! Even what music you like to
+                    listen to! Then we take your answers and create a stunning photo session!</p>
+            </div>
+            <div class="faq-item">
+                <h3>Myself/Spouse/Child/Pet hates being in photos or doesn’t photograph well or are super awkward - can you
+                    help?</h3>
+                <p>Yes, it would be my pleasure to help! Most don't have experience being photographed and I'm here to help.
+                    Through my calm manner, professional style and natural posing, I make sure that everyone looks natural
+                    and lovely in the photos. Some people take a little longer to warm up, and in those cases I make sure
+                    that you feel comfortable and relaxed while we are in session. We take lots of breaks to chat, listen to
+                    music and dance, and overall have fun. I promise, I make it painless and fun, and it won't be nearly as
+                    bad as you think!</p>
+            </div>
+            <div class="faq-item">
+                <h3>How long before I receive my fully edited images and do you provide digital files or prints?</h3>
+                <p>Retouching and color grading can take up to 10 business days. If you would like to put in a rush order
+                    for your images, we can arrange that for a supplementary fee. After post production, your photos will be
+                    uploaded and available for download. If you would like to have prints of your photos, we can provide you
+                    with high quality prints for an additional fee. We can discuss what you are looking for before or after
+                    the session. </p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I have the RAW files as well?</h3>
+                <p>RAW files are flat and unedited. Some shots are visual exposure tests. Many of the shots are wrong
+                    timing, like capturing an awkward blink. Basically a hodge-podge of photos, not a suitable
+                    representation of my style.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What’s your favourite location in Vancouver to photograph</h3>
+                <p>I can’t just choose one. I love Lynn Canyon for the trees and greens, Campbell Valley Park for the long
+                    grass and yellows, and Jericho Beach for the beaches with our majestic mountains for backdrop.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Do you like the Canucks?</h3>
+                <p>I’m a diehard fan of our Canucks, and loved watching the Sedinery Magic!
+                </p>
+            </div>
+        </div>
+    </section>
+
 
 @endsection
 

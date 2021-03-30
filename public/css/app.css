@@ -618,7 +618,7 @@ select {
 .pricing-section .pricing-cards .pricing-card {
   flex: 1;
   margin: 1rem;
-  padding: 1rem 3rem;
+  padding: 1rem 2rem;
   text-align: center;
   display: flex;
   flex-flow: column nowrap;
@@ -656,12 +656,36 @@ select {
   color: #f4f4f5;
 }
 
+.faq-section .faq-items {
+  margin-top: 2rem;
+  display: flex;
+  flex-flow: row wrap;
+  height: 100%;
+}
+.faq-section .faq-items .faq-item {
+  flex: 1 1 30%;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.faq-section .faq-items .faq-item h3 {
+  font-weight: 700;
+  color: var(--clr-dark-500);
+  margin-bottom: 1rem;
+}
+.faq-section .faq-items .faq-item p {
+  color: rgba(37, 31, 31, 0.5);
+}
+.faq-section .faq-items .faq-item a {
+  color: red;
+}
+
 .swiper-box {
   background: var(--clr-light-100);
   box-shadow: 0px 0px 89px -31px rgba(0, 0, 0, 0.25);
   border-radius: 1.5rem;
   margin: 0 3rem;
   padding: 1rem;
+  display: flex;
 }
 
 .swiper-container {
