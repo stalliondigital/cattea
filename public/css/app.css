@@ -191,6 +191,18 @@ select {
   font-family: "Avenir LT Std";
 }
 
+.section-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--clr-dark-500);
+}
+
+.section-subtitle {
+  font-size: 1.22rem;
+  font-weight: normal;
+  color: var(--clr-dark-300);
+}
+
 .header-cta-button {
   background-color: var(--clr-dark-500);
   color: var(--clr-light-100);
@@ -202,6 +214,12 @@ select {
 .header-cta-button:hover, .header-cta-button:focus {
   transform: scale(1.05);
   box-shadow: 0px 16px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  background: var(--clr-light-100);
+  box-shadow: 0px 0px 51px -1px rgba(0, 0, 0, 0.09);
+  border-radius: 38px;
 }
 
 #menu-toggle {
@@ -455,6 +473,29 @@ select {
   border-color: var(--clr-dark-300);
 }
 
+.process-cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+}
+.process-cards .process-card {
+  padding: 1rem;
+}
+.process-cards .process-card-header {
+  display: flex;
+  flex-flow: row nowrap;
+}
+.process-cards .process-card-header img {
+  background: var(--clr-light-200);
+  padding: 0.45rem;
+  border-radius: 50%;
+}
+.process-cards .process-card-header h5 {
+  font-weight: 800;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+}
 .swiper-box {
   background: var(--clr-light-100);
   box-shadow: 0px 0px 89px -31px rgba(0, 0, 0, 0.25);
@@ -480,15 +521,20 @@ select {
 }
 .swiper-nav .swiper-button-prev, .swiper-nav .swiper-button-next {
   color: white;
-  background: rgba(255, 255, 255, 0.25);
+  background-color: rgba(255, 255, 255, 0.25);
   border-radius: 50%;
   position: absolute;
   width: 40px;
   height: 40px;
   font-size: 1.5rem;
+  transition: color 0.25s ease, background-color 0.25s ease;
 }
 .swiper-nav .swiper-button-prev::after, .swiper-nav .swiper-button-next::after {
   display: none;
+}
+.swiper-nav .swiper-button-prev:hover, .swiper-nav .swiper-button-next:hover {
+  color: var(--clr-dark-500);
+  background-color: white;
 }
 .swiper-nav .swiper-button-prev {
   left: 85%;

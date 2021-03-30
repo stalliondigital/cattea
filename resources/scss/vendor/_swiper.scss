@@ -30,14 +30,19 @@ padding: 1rem;
     }
     .swiper-button-prev, .swiper-button-next {
         color: white;
-        background: rgba(white, 0.25);
+        background-color: rgba(white, 0.25);
         border-radius: 50%;
         position: absolute;
         width: 40px;
         height: 40px;
         font-size: 1.5rem;
+        transition: color 0.25s ease, background-color 0.25s ease;
         &::after {
             display: none;
+        }
+        &:hover {
+            color: var(--clr-dark-500);
+            background-color: white;
         }
     }
     .swiper-button-prev {
