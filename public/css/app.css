@@ -680,8 +680,12 @@ a.text-link:hover, a.text-link:focus {
   flex-flow: row wrap;
   justify-content: center;
   align-items: stretch;
-  padding: 1.25rem;
   width: 100%;
+}
+@media screen and (min-width: 659px) {
+  .process-cards {
+    padding: 1.25rem;
+  }
 }
 .process-cards .process-card {
   padding: 1.25rem;

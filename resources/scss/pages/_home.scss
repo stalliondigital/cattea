@@ -85,11 +85,15 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: stretch;
-    padding: 1.25rem;
     width: 100%;
+    @media screen and (min-width: 659px) {
+        padding: 1.25rem;
+    }
+
 
 
     .process-card {
+        
         padding: 1.25rem;
         margin: 1rem;
         flex: 1;
