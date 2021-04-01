@@ -227,6 +227,8 @@
             parallax: true,
             speed: 600,
             effect: 'fade',
+            // autoHeight: true, //enable auto height
+
             autoplay: {
                 delay: 5000,
                 disableOnInteraction: false,

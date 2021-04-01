@@ -229,6 +229,10 @@
             transition: color 0.25s ease;
             order: 1; 
             margin-right: 0.4rem; 
+            visibility: hidden;
+            @media screen and (min-width: 375px) {
+                visibility: visible;
+            }
             @media screen and (min-width: 660px) {
                 order: unset;
                 margin-right: 0;

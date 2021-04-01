@@ -6,13 +6,16 @@
     left: 0;
     top: 15%;
     text-align: left;
-    padding: 3rem;
-    border-top-right-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-    width: 55%;
+    padding: 2rem;
+    width: 100%;
+    @media screen and (min-width: 880px) {
+        padding: 3rem;
+        border-top-right-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+        width: 55%;
+    }
 
-
-    @supports (
+    @supports ( 
         (-webkit-backdrop-filter: blur(8px)) or (backdrop-filter: blur(8px))
     ) {
         background: rgba(255, 255, 255, 0.45);        -webkit-backdrop-filter: blur(8px);
@@ -22,19 +25,24 @@
     h1 {
         display: inline-block;
         font-size: 2.5rem;
+        font-size: 2rem;
         font-weight: 800;
         // width: 100%;
     }
 
     ul {
         display: inline-flex;
-        flex-flow: row nowrap;
+        flex-flow: row wrap;
         margin-bottom: 1rem;
 
         li  {
             align-items: baseline;
-            font-size: 1.45rem;
-            padding: 0.5rem 1.8rem;
+            font-size: 1.25rem; 
+            padding: 0.5rem 1rem;
+            @media screen and (min-width: 425px) {
+                font-size: 1.45rem;
+                padding: 0.5rem 1.8rem;
+            }
             margin-top: 1rem;
             margin-right: 1rem;
             border-radius: 8px;
