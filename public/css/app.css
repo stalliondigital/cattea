@@ -882,9 +882,14 @@ a.text-link:hover, a.text-link:focus {
   height: 100%;
 }
 .faq-section .faq-items .faq-item {
-  flex: 1 1 30%;
+  flex: 1 1 100%;
   padding: 1rem;
   margin: 0.5rem;
+}
+@media screen and (min-width: 1024px) {
+  .faq-section .faq-items .faq-item {
+    flex: 1 1 30%;
+  }
 }
 .faq-section .faq-items .faq-item h3 {
   font-weight: 700;

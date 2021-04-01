@@ -128,7 +128,7 @@
 
     </section>
 
-    <section class="mt-10 mb-10 ml-20 mr-10 pricing-section">
+    <section class="mt-10 md:mb-10 md:ml-20 md:mr-10 pricing-section">
         <header>
             <h2 class="section-title">Interested in Shooting with Me?</h2>
             <h4 class="section-subtitle">Simple and transparent pricing</h4>
@@ -160,7 +160,7 @@
         </div>
     </section>
 
-    <section class="mt-20 mb-10 ml-20 mr-10 faq-section">
+    <section class="mt-20 md:mb-10 md:ml-20 md:mr-10 faq-section">
         <header class="text-center">
             <h2 class="section-title">Frequently Asked Questions</h2>
         </header>

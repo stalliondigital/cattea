@@ -313,7 +313,10 @@
         height: 100%;
         
         .faq-item {
-            flex: 1 1 30%;
+            flex: 1 1 100%;
+            @media screen and (min-width: 1024px) {
+                flex: 1 1 30%;
+            }
             padding: 1rem;
             margin: 0.5rem;
             // background: red;
