@@ -29,8 +29,8 @@
         </div>
     </header>
 
-    <section class="bio-content">
-        <div class="bio-content-image">
+    <section class="bio">
+        <div class="bio-image">
             <img src="{{ asset('img/about/cat.jpg') }}"
                 alt="a picture of a cat sitting on the window sill looking outside at the trees.">
         </div>
@@ -50,8 +50,8 @@
     </section>
 
     <section class="about-cta">
-        <h2>Interested in a session with me?</h2>
-        <h3>Ask me about my favourites at our presession meeting!</h3>
+        <h2 class="section-title">Interested in a session with me?</h2>
+        <h3 class="section-subtitle">Ask me about my favourites at our presession meeting!</h3>
         <ul>
             <li><a href="{{ route('contact') }}">Book Session</a></li>
             <li><a href="{{ route('portfolio') }}">View Work</a></li>
