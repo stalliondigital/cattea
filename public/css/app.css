@@ -743,8 +743,10 @@ a.text-link:hover, a.text-link:focus {
   align-items: center;
   flex-direction: column;
 }
-.specialties-section header h4 {
-  max-width: 50%;
+@media screen and (min-width: 660px) {
+  .specialties-section header h4 {
+    max-width: 50%;
+  }
 }
 .specialties-section header a {
   transition: transform 0.25s ease;
@@ -757,12 +759,29 @@ a.text-link:hover, a.text-link:focus {
   flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-  width: 70%;
   margin: 0 auto;
   margin-top: 3rem;
 }
+@media screen and (min-width: 1078px) {
+  .specialties-section .specialty-cards {
+    max-width: 70%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .specialties-section .specialty-cards h5.card-spc-long-text {
+    max-width: 41%;
+    overflow-x: hidden;
+    white-space: none;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (min-width: 869px) {
+  .specialties-section .specialty-cards h5.card-spc-long-text {
+    max-width: 100%;
+  }
+}
 .specialties-section .specialty-cards .specialty-card {
-  flex: 1 1 30%;
+  flex: 1 1 50%;
   margin: 1rem;
   display: flex;
   flex-flow: row wrap;
@@ -770,10 +789,16 @@ a.text-link:hover, a.text-link:focus {
   justify-content: center;
   transition: transform 0.5s ease;
 }
+@media screen and (min-width: 768px) {
+  .specialties-section .specialty-cards .specialty-card {
+    flex: 1 1 30%;
+  }
+}
 .specialties-section .specialty-cards .specialty-card:hover {
   transform: scale(1.03);
 }
 .specialties-section .specialty-cards .specialty-card img {
+  flex-basis: 100%;
   border-radius: 38px;
   max-height: 400px;
 }

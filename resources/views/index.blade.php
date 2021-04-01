@@ -91,7 +91,7 @@
         </div>
     </section>
 
-    <section class="mt-10 mb-10 ml-20 mr-10 specialties-section" id="specialty">
+    <section class="mt-10 md:mb-10 md:ml-20 md:mr-10 specialties-section" id="specialty">
         <header>
             <h2 class="section-title">Our Specialties</h2>
             <h4 class="section-subtitle">Although we capture photographs of a variety of types, we specialize in lifestyle,
@@ -108,7 +108,7 @@
 
             <div class="card specialty-card">
                 <img loading="lazy" src="{{ asset('img/specialty/astrophotography.jpg') }}" alt="astrophotography">
-                <h5>Astrophotography</h5>
+                <h5 class="card-spc-long-text">Astrophotography</h5>
                 <a href="{{ route('portfolio') }}#astrophotography">View Examples</a>
             </div>
 
