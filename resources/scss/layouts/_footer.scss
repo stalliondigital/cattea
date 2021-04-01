@@ -12,8 +12,16 @@
 
 
         .footer-left {
-            padding: 3rem 5rem;
+            padding: 2rem 1rem;
             padding-bottom: 1rem;
+            @media screen and (min-width: 946px) {
+                // padding: 3rem 5rem;
+                padding: 3rem 2rem;
+            }
+
+            @media screen and (min-width: 1076px) {
+                padding: 3rem 5rem;
+            }
 
             .footer-logo {
                 display: flex;
@@ -35,8 +43,10 @@
 
             p {
                 color: rgba(37, 31, 31, 0.5);
-                max-width: 60%;
                 margin-bottom: 1rem;
+                @media screen and (min-width: 425px) {
+                    max-width: 60%;
+                }
 
             }
 
@@ -65,7 +75,10 @@
             align-items: flex-start;
 
             ul {
-                margin: 2rem;
+                margin: 0.1rem;
+                @media screen and (min-width: 946px) {
+                    margin: 2rem;
+                }
 
                 li {
                     margin: 0.5rem;
