@@ -207,9 +207,10 @@
                 </p>
             </div>
         </div>
-        <p class="bg-gray-100 p-10 rounded-xl text-center mt-20 text-2xl">If you have any more questions, feel free to <a
-                class="text-link" href="{{ route('contact') }}">contact
-                me</a></p>
+        <p class="bg-gray-100 p-10 m-10 rounded-xl text-center mt-20 text-2xl">If you have any more questions, feel free to
+            <a class="text-link" href="{{ route('contact') }}">contact
+                me</a>
+        </p>
     </section>
 
 
