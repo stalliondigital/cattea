@@ -203,6 +203,17 @@ select {
   color: var(--clr-dark-300);
 }
 
+@media screen and (min-width: 1280px) {
+  html {
+    background: url("/img/bg-gradients.svg") no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-position: top left;
+  }
+}
+
 .btn {
   font-size: 1rem;
   padding: 0.5rem 1.15rem;
@@ -214,7 +225,7 @@ select {
 .header-cta-button {
   background-color: var(--clr-dark-500);
   color: var(--clr-light-100);
-  padding: 0.7rem;
+  padding: 0.5rem;
   border-radius: 6rem;
   transition: transform 0.25s ease-in-out, box-shadow 0.25s ease-in-out;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
@@ -383,16 +394,27 @@ a.text-link:hover, a.text-link:focus {
 }
 
 .header-main {
-  padding: 2rem;
+  padding: 0.5rem;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 640px) {
+  .header-main {
+    padding: 2rem;
+    justify-content: space-evenly;
+  }
 }
 .header-main .header-social-links {
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   margin-right: auto;
+}
+@media screen and (min-width: 660px) {
+  .header-main .header-social-links {
+    display: flex;
+  }
 }
 .header-main .header-social-links li {
   margin: 0.5rem;
@@ -404,6 +426,7 @@ a.text-link:hover, a.text-link:focus {
   display: flex;
   justify-content: center;
   align-items: center;
+  justify-content: flex-start;
   margin: 0 auto;
 }
 .header-main .header-logo a span {
@@ -413,10 +436,24 @@ a.text-link:hover, a.text-link:focus {
   letter-spacing: 0.105em;
   font-size: 1.2rem;
   transition: color 0.25s ease;
+  order: 1;
+  margin-right: 0.4rem;
+}
+@media screen and (min-width: 660px) {
+  .header-main .header-logo a span {
+    order: unset;
+    margin-right: 0;
+  }
 }
 .header-main .header-logo a img {
   margin: 0.5rem;
   transition: opacity 0.25s ease;
+  max-width: 20%;
+}
+@media screen and (min-width: 880px) {
+  .header-main .header-logo a img {
+    max-width: 100%;
+  }
 }
 .header-main .header-logo a:hover span {
   color: var(--clr-dark-400);
@@ -426,6 +463,12 @@ a.text-link:hover, a.text-link:focus {
 }
 .header-main .header-cta-button {
   margin-left: auto;
+  display: none;
+}
+@media screen and (min-width: 533px) {
+  .header-main .header-cta-button {
+    display: block;
+  }
 }
 
 .footer-main {
@@ -668,7 +711,7 @@ a.text-link:hover, a.text-link:focus {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  transition: transform 1s ease;
+  transition: transform 0.5s ease;
 }
 .specialties-section .specialty-cards .specialty-card:hover {
   transform: scale(1.03);

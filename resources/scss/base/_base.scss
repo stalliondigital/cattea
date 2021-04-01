@@ -1,0 +1,13 @@
+html {
+    
+    @media screen and (min-width: 1280px) {
+        background: url("/img/bg-gradients.svg") no-repeat ;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-position: top left;
+
+    }
+    
+}
