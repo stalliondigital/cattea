@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Dashboard') }}
+            {{ __('Manage Portfolio') }}
         </h2>
     </x-slot>
 
@@ -10,8 +10,7 @@
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
 
                 <div class="bg-white shadow-xl p-20 rounded-2xl">
-                    <h2 class="text-lg font-bold mb-10">Welcome {{ Auth::user()->name }}</h2>
-                    <a class="p-3 ml-0 bg-gray-900 m-4 text-white rounded-lg"
+                    <a class="transition-colors hover:bg-gray-600 p-3 ml-0 bg-gray-900 m-4 text-white rounded-lg"
                         href="{{ route('portfolio.create') }}">Add
                         Portfolio
                         Item</a>
@@ -82,8 +81,7 @@
                                                         {{-- Actions --}}
                                                         <td
                                                             class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
-                                                            <form
-                                                                action="{{ route('portfolio.destroy', $item->id) }}"
+                                                            <form action="{{ route('portfolio.destroy', $item->id) }}"
                                                                 method="POST">
                                                                 @csrf
                                                                 @method('DELETE')
