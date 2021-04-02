@@ -7,7 +7,7 @@
             <h1 class="section-title">Portfolio</h1>
             <h2 class="section-subtitle">A collection of my work shooting various types of photography &#40;and a sample of
                 my
-                pottery&#41</h2>
+                pottery&#41;</h2>
         </header>
 
         <div class="portfolio-categories">
@@ -23,46 +23,59 @@
             </ul>
         </div>
 
-        {{-- <div class="portfolio-images">
-            <ul>
-                <li><img src="{{ asset('img/slideshow/slide-1.png') }}" alt=""></li>
-                <li><img src="{{ asset('img/slideshow/slide-2.png') }}" alt=""></li>
-                <li><img src="{{ asset('img/slideshow/slide-3.png') }}" alt=""></li>
-                <li><img src="{{ asset('img/slideshow/slide-4.png') }}" alt=""></li>
-                <li>
-                    <img src="{{ asset('img/slideshow/slide-5.png') }}" alt="">
-                </li>
-                <li><img src="{{ asset('img/slideshow/slide-1.png') }}" alt=""></li>
-                <li><img src="{{ asset('img/slideshow/slide-2.png') }}" alt=""></li>
-                <li><img src="{{ asset('img/slideshow/slide-3.png') }}" alt=""></li>
-                <li><img src="{{ asset('img/slideshow/slide-4.png') }}" alt=""></li>
-                <li>
-                    <img src="{{ asset('img/slideshow/slide-5.png') }}" alt="">
-                </li>
-            </ul>
-        </div> --}}
-
         <div class="portfolio-images-container">
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-1.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-1.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-2.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-2.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-3.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-3.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-4.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-4.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-5.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-5.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-4.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-4.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-3.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-3.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-2.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-2.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-5.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-5.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-3.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-3.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-4.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-4.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-1.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-1.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-2.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-2.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-1.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-1.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-4.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-4.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-2.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-2.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-5.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-5.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-3.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-3.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-1.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-1.png') }}" alt=""></a></div>
-            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-2.png') }}"><img loading="lazy" src="{{ asset('img/slideshow/slide-2.png') }}" alt=""></a></div>
+
+            @foreach ($portfolio as $item)
+                <div class="img-item">
+                    <a data-fancybox="gallery" href="{{ asset('img/portfolio/') }}{{ $item->imagePath }}">
+                        <img src="{{ asset('img/portfolio/') }}{{ $item->imagePath }}" alt="{{ $item->altText }}">
+                    </a>
+                </div>
+            @endforeach
+
+            <div class="img-item">
+                <a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-1.png') }}">
+                    <img loading="lazy" src="{{ asset('img/slideshow/slide-1.png') }}" alt="">
+                </a>
+            </div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-2.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-2.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-3.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-3.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-4.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-4.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-5.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-5.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-4.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-4.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-3.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-3.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-2.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-2.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-5.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-5.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-3.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-3.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-4.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-4.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-1.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-1.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-2.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-2.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-1.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-1.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-4.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-4.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-2.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-2.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-5.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-5.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-3.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-3.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-1.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-1.png') }}" alt=""></a></div>
+            <div class="img-item"><a data-fancybox="gallery" href="{{ asset('img/slideshow/slide-2.png') }}"><img
+                        loading="lazy" src="{{ asset('img/slideshow/slide-2.png') }}" alt=""></a></div>
 
             <span class="img-item break"></span>
             <span class="img-item break"></span>
