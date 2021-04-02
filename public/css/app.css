@@ -1074,6 +1074,70 @@ a.text-link:hover, a.text-link:focus {
   color: var(--clr-dark-500);
 }
 
+.portfolio-content {
+  box-shadow: 0px 0px 89px -31px rgba(0, 0, 0, 0.25);
+}
+
+.portfolio-active {
+  background: var(--clr-dark-500);
+  color: var(--clr-light-100);
+}
+
+.portfolio-categories ul li {
+  border-radius: 5rem;
+  transition: background-color 0.25s ease;
+}
+.portfolio-categories ul li:hover {
+  background-color: #cdcfd3;
+}
+
+.portfolio-images-container {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: space-between;
+  /* Your container needs a fixed height, and it 
+   * needs to be taller than your tallest column. */
+  height: 960px;
+  /* Optional */
+  width: 70%;
+  margin: 40px auto;
+}
+
+.img-item {
+  width: 24%;
+  margin: 2rem 0.5rem;
+}
+.img-item img {
+  box-shadow: 0px 0px 47px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+}
+
+/* Re-order items into 3 rows */
+.img-item:nth-of-type(4n+1) {
+  order: 1;
+}
+
+.img-item:nth-of-type(4n+2) {
+  order: 2;
+}
+
+.img-item:nth-of-type(4n+3) {
+  order: 3;
+}
+
+.img-item:nth-of-type(4n) {
+  order: 4;
+}
+
+/* Force new columns */
+.break {
+  flex-basis: 100%;
+  width: 0;
+  margin: 0;
+  content: "";
+  padding: 0;
+}
+
 .swiper-box {
   background: var(--clr-light-100);
   box-shadow: 0px 0px 89px -31px rgba(0, 0, 0, 0.25);

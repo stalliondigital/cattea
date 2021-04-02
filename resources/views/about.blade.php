@@ -21,7 +21,7 @@
             </ul>
             <ul class="about-header-content-actions">
                 <li><a href="{{ route('contact') }}">Get in Touch</a></li>
-                <li><a href="{{ route('portfolio') }}">View My Work</a></li>
+                <li><a href="{{ route('portfolio.index') }}">View My Work</a></li>
             </ul>
         </div>
         <div class="about-header-image">
@@ -54,7 +54,7 @@
         <h3 class="section-subtitle">Ask me about my favourites at our presession meeting!</h3>
         <ul>
             <li><a href="{{ route('contact') }}">Book Session</a></li>
-            <li><a href="{{ route('portfolio') }}">View Work</a></li>
+            <li><a href="{{ route('portfolio.index') }}">View Work</a></li>
         </ul>
     </section>
 
