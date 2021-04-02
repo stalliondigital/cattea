@@ -2,16 +2,17 @@
 
 @section('content')
 
-    <section class="contact-box big-shadow bg-white m-20 flex rounded-3xl">
+    <section class="contact-box big-shadow bg-white m-20 flex flex-wrap md:flex-nowrap rounded-3xl">
         <div class="p-10">
             <h1 class="section-title">Contact</h1>
             <h3 class="section-subtitle max-w-md">Fill in the form or use one of the contact methods below to reach me.</h3>
-            <ul>
-                <li><a href="mailto:info@cattea.ca"><img class="mr-3" loading="lazy"
+            <ul class="mt-5">
+                <li class="p-3"><a href="mailto:info@cattea.ca"><img class="mr-3 inline" loading="lazy"
                             src="{{ asset('img/icons/mail.svg') }}" alt="mail icon">info@cattea.ca</a></li>
-                <li><a href="https://facebook.com/CatteaArtistry"><i class="fab fa-facebook mr-3"></i>/CatteaArtistry</a>
+                <li class="p-3"><a href="https://facebook.com/CatteaArtistry"><i
+                            class="fab fa-facebook mr-3"></i>/CatteaArtistry</a>
                 </li>
-                <li><a href="https://instagram.com/cattea_artistry"><i
+                <li class="p-3"><a href="https://instagram.com/cattea_artistry"><i
                             class="fab fa-instagram mr-3"></i>&commat;cattea_artistry</a></li>
             </ul>
         </div>
@@ -55,6 +56,8 @@
                     class="focus:ring-gray-500 text-gray-500 block w-full mt-5 placeholder-gray-300 border-gray-300 rounded-2xl bg-gray-100"
                     name="message" id="message" cols="30" rows="10" placeholder="Messages"></textarea>
             </div>
+
+            <button class="block self-end p-5 m-2 btn px-3 py-2" type="submit">Send Message</button>
 
         </form>
     </section>
