@@ -1083,6 +1083,10 @@ a.text-link:hover, a.text-link:focus {
   color: var(--clr-dark-500);
 }
 
+.form-message {
+  flex-basis: 100%;
+}
+
 .portfolio-active {
   background: var(--clr-dark-500);
   color: var(--clr-light-100);
