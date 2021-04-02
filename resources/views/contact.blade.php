@@ -2,7 +2,8 @@
 
 @section('content')
 
-    <section class="contact-box big-shadow bg-white m-20 flex flex-wrap md:flex-nowrap rounded-3xl">
+    <section
+        class="mb-40 contact-box big-shadow bg-white m-2 md:m-20 justify-center md:justify-start flex flex-wrap md:flex-nowrap rounded-3xl">
         <div class="p-10">
             <h1 class="section-title">Contact</h1>
             <h3 class="section-subtitle max-w-md">Fill in the form or use one of the contact methods below to reach me.</h3>
