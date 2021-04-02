@@ -20,7 +20,7 @@
                 <br>
                 <ul>
                     <li><a href="{{ route('contact') }}">Book Session</a></li>
-                    <li><a href="{{ route('portfolio') }}">View Work</a></li>
+                    <li><a href="{{ route('portfolio.index') }}">View Work</a></li>
                 </ul>
                 <br>
                 <p>Completed a session? <a href="#linktopixieset">Click here </a>to download your images.</p>
@@ -97,31 +97,31 @@
             <h4 class="section-subtitle">Although we capture photographs of a variety of types, we specialize in lifestyle,
                 pets, astrophotography and
                 landscape.</h4>
-            <a class="btn mt-5 inline-block" href="{{ route('portfolio') }}">View Portfolio</a>
+            <a class="btn mt-5 inline-block" href="{{ route('portfolio.index') }}">View Portfolio</a>
         </header>
         <div class="specialty-cards mt-20">
             <div class="card specialty-card">
                 <img loading="lazy" src="{{ asset('img/specialty/pets.jpg') }}" alt="pets">
                 <h5>Pets</h5>
-                <a href="{{ route('portfolio') }}#pets">View Examples</a>
+                <a href="{{ route('portfolio.index') }}#pets">View Examples</a>
             </div>
 
             <div class="card specialty-card">
                 <img loading="lazy" src="{{ asset('img/specialty/astrophotography.jpg') }}" alt="astrophotography">
                 <h5 class="card-spc-long-text">Astrophotography</h5>
-                <a href="{{ route('portfolio') }}#astrophotography">View Examples</a>
+                <a href="{{ route('portfolio.index') }}#astrophotography">View Examples</a>
             </div>
 
             <div class="card specialty-card">
                 <img loading="lazy" src="{{ asset('img/specialty/lifestyle.jpg') }}" alt="lifestyle">
                 <h5>Lifestyle</h5>
-                <a href="{{ route('portfolio') }}#lifestyle">View Examples</a>
+                <a href="{{ route('portfolio.index') }}#lifestyle">View Examples</a>
             </div>
 
             <div class="card specialty-card">
                 <img loading="lazy" src="{{ asset('img/specialty/landscape.jpg') }}" alt="landscape">
                 <h5>Landscape</h5>
-                <a href="{{ route('portfolio') }}#landscape">View Examples</a>
+                <a href="{{ route('portfolio.index') }}#landscape">View Examples</a>
             </div>
         </div>
 

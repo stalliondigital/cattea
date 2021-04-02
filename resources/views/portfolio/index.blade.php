@@ -2,7 +2,7 @@
 
 @section('content')
 
-    <section class="portfolio-content bg-white p-10 m-10 rounded-3xl">
+    <section class="portfolio-content big-shadow bg-white p-10 m-10 rounded-3xl">
         <header class="mt-20 text-center md:max-w-md mx-auto">
             <h1 class="section-title">Portfolio</h1>
             <h2 class="section-subtitle">A collection of my work shooting various types of photography &#40;and a sample of
