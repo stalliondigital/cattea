@@ -1,18 +1,19 @@
 
 
-.portfolio-active {
-    background: var(--clr-dark-500);
+// #tabby-toggle_all {
+//     background: var(--clr-dark-500);
+//     color: var(--clr-light-100);
+// }
+
+.portfolio-tabs a[aria-selected="true"]  {
+  background: var(--clr-dark-500);
     color: var(--clr-light-100);
+    border-radius: 3rem;
 }
 
-.portfolio-categories ul li {
+.portfolio-categories ul li a {
     border-radius: 5rem;
     transition: background-color 0.25s ease;
-
-    &:hover {
-
-        background-color: #cdcfd3;
-    }
 }
 
 // .portfolio-images {

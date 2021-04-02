@@ -27,6 +27,15 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
     <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 
+    {{-- TabbyJS --}}
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/css/tabby-ui.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/tabby@12/dist/js/tabby.polyfills.min.js"></script>
+
+
+
+
+
     @livewireStyles
 
     <!-- Scripts -->
@@ -149,6 +158,15 @@
                         <li>Work</li>
                         <li><a href="{{ route('portfolio.index') }}">Portfolio</a></li>
                         <li><a href="#link-to-pixieset">Client Gallery</a></li>
+                        @if (Auth::check())
+                            <form method="POST" action="{{ route('logout') }}">
+                                @csrf
+                                <li><button class="font-normal" type="submit" href="{{ route('logout') }}">Log
+                                        Out</button></li>
+                            </form>
+                        @else
+                            <li><a href="{{ route('login') }}">Log In</a></li>
+                        @endif
                     </ul>
                 </div>
             </div>
@@ -168,7 +186,10 @@
 
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+    <script>
+        var tabs = new Tabby('[data-tabs]');
 
+    </script>
     @yield('swiper')
     @livewireScripts
 </body>

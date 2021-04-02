@@ -17,7 +17,6 @@ class PortfolioController extends Controller
         // $assessments = Assessment::orderBy('date', 'DESC')->get();
 
         $portfolio = Portfolio::all();
-
         // return view('portfolio.index', compact('portfolio'));
         return view ('portfolio.index', ['portfolio' => $portfolio]);
     }
@@ -85,6 +84,8 @@ class PortfolioController extends Controller
      */
     public function destroy(Portfolio $portfolio)
     {
-        //
+        $portfolio->delete(); // TODO add delete for file item too
+
+        return redirect()->route('portfolio.index')->with('success', 'Portfolio Image deleted successfully');
     }
 }
