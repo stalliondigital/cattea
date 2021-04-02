@@ -94,8 +94,12 @@
                                                         </td>
                                                     </tr>
                                                 @endforeach
+
                                             </tbody>
                                         </table>
+                                    </div>
+                                    <div class="m-3 p-2">
+                                        {{ $portfolio->links() }}
                                     </div>
                                 </div>
                             </div>

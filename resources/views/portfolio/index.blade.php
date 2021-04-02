@@ -140,7 +140,9 @@
             <span class="img-item break"></span>
             <span class="img-item break"></span>
         </div>
+        {{ $portfolio->links() }}
     </section>
+
 
 
 

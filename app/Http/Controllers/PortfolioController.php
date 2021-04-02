@@ -4,12 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\Portfolio;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\File; 
+
 
 class PortfolioController extends Controller
 {
     public function index()
     {
-        $portfolio = Portfolio::all();
+        $portfolio = Portfolio::paginate(50);
+
         return view ('portfolio.index', ['portfolio' => $portfolio]);
     }
 
@@ -20,7 +23,7 @@ class PortfolioController extends Controller
 
     public function manage()
     {
-        $portfolio = Portfolio::orderBy('category', 'DESC')->get();
+        $portfolio = Portfolio::orderBy('category', 'DESC')->paginate(10);
 
         return view ('portfolio.manage', ['portfolio' => $portfolio]);    }
 
@@ -33,6 +36,21 @@ class PortfolioController extends Controller
             'category' => 'required',
             'imagePath' => 'required|mimes:jpg, png, jpeg|max:5048'       
         ]);
+
+
+        $newImageName = time() . '-' . str_replace(' ', '-', $request->title) . '.' . $request->imagePath->extension();
+
+        $request->imagePath->move(public_path('img/portfolio/') . lcfirst($request->category), $newImageName);
+
+        $portfolio = Portfolio::create([
+            'title' => $request->input('title'),
+            'altText' => $request->input('altText'),
+            'category' => $request->input('category'),
+            'imagePath' => lcfirst($request->category) . '/' . $newImageName,
+        ]);
+
+        return redirect('/portfolio/manage');
+
     }
 
 
@@ -55,7 +73,15 @@ class PortfolioController extends Controller
 
     public function destroy(Portfolio $portfolio)
     {
-        $portfolio->delete(); // TODO add delete for file item too
+        $fullPath = public_path('img/portfolio/') . $portfolio->imagePath;
+
+        if (File::exists($fullPath)) {
+            File::delete($fullPath);
+        }
+
+
+
+        $portfolio->delete();
 
         return redirect()->route('portfolio.manage')->with('success', 'Portfolio Image deleted successfully');
     }
