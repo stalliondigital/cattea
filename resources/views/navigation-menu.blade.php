@@ -19,9 +19,17 @@
 
                 <!-- Navigation Links -->
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <x-jet-nav-link href="{{ route('portfolio.manage') }}"
+                        :active="request()->routeIs('portfolio.manage')">
+                        {{ __('Manage Portfolio') }}
+                    </x-jet-nav-link>
+                </div>
+
+                <!-- Navigation Links -->
+                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-jet-nav-link href="{{ route('portfolio.index') }}"
                         :active="request()->routeIs('portfolio.index')">
-                        {{ __('Portfolio') }}
+                        {{ __('Public Portfolio') }}
                     </x-jet-nav-link>
                 </div>
             </div>

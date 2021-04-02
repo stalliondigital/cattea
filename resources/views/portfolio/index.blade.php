@@ -34,16 +34,6 @@
                             <img loading="lazy" src="{{ asset('img/portfolio') }}/{{ $item->imagePath }}"
                                 alt="{{ $item->altText }}">
                         </a>
-                        @if (Auth::check())
-                            <form action="{{ route('portfolio.destroy', $item->id) }}" method="POST">
-                                @csrf
-                                @method('DELETE')
-                                <button onclick="return confirm('Are you sure you would like to delete this image?')"
-                                    class="px-3 py-1 bg-red-600 rounded-md shadow-sm mt-4 text-white font-bold"
-                                    type="submit">Delete
-                                    Image</button>
-                            </form>
-                        @endif
                     </div>
                 @endforeach
             </div>

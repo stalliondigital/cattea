@@ -23,10 +23,11 @@ Route::get('/about', function () {
     return view('about');
 })->name('about');
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/portfolio/manage', [PortfolioController::class, 'manage'])->name('portfolio.manage');
 Route::resource('portfolio', PortfolioController::class);
-// Route::get('/portfolio', function () {
-//     return view('portfolio');
-// })->name('portfolio');
+
+
+
 
 Route::get('/contact', function () {
     return view('contact');

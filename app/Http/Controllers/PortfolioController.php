@@ -14,10 +14,7 @@ class PortfolioController extends Controller
      */
     public function index()
     {
-        // $assessments = Assessment::orderBy('date', 'DESC')->get();
-
         $portfolio = Portfolio::all();
-        // return view('portfolio.index', compact('portfolio'));
         return view ('portfolio.index', ['portfolio' => $portfolio]);
     }
 
@@ -28,8 +25,14 @@ class PortfolioController extends Controller
      */
     public function create()
     {
-        //
+        return view('portfolio.create');
     }
+
+    public function manage()
+    {
+        $portfolio = Portfolio::orderBy('category', 'DESC')->get();
+
+        return view ('portfolio.manage', ['portfolio' => $portfolio]);    }
 
     /**
      * Store a newly created resource in storage.
@@ -86,6 +89,6 @@ class PortfolioController extends Controller
     {
         $portfolio->delete(); // TODO add delete for file item too
 
-        return redirect()->route('portfolio.index')->with('success', 'Portfolio Image deleted successfully');
+        return redirect()->route('portfolio.manage')->with('success', 'Portfolio Image deleted successfully');
     }
 }
