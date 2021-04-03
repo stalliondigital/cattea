@@ -38,6 +38,9 @@
                                                     <th scope="col" class="relative px-6 py-3">
                                                         <span class="sr-only">Actions</span>
                                                     </th>
+                                                    <th scope="col" class="relative px-6 py-3">
+                                                        <span class="sr-only">Actions</span>
+                                                    </th>
                                                 </tr>
                                             </thead>
                                             <tbody class="bg-white divide-y divide-gray-200">
@@ -71,9 +74,10 @@
                                                             </span>
                                                         </td>
                                                         {{-- Path --}}
-                                                        {{-- <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-                                                            {{ $item->imagePath }}
-                                                        </td> --}}
+                                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                            <a class="bg-gray-200 px-4 py-2 rounded"
+                                                                href="{{ route('portfolio.edit', $item) }}">Edit</a>
+                                                        </td>
                                                         {{-- Actions --}}
                                                         <td
                                                             class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">

@@ -30,13 +30,7 @@ class PortfolioController extends Controller
 
     public function store(Request $request)
     {
-        $request->validate([
-            'title' => 'required',
-            'altText' => 'max:2021',
-            'category' => 'required',
-            'imagePath' => 'required|mimes:jpg, png, jpeg|max:5048'       
-        ]);
-
+        $this->validatePortfolio();
 
         $newImageName = time() . '-' . str_replace(' ', '-', $request->title) . '.' . $request->imagePath->extension();
 
@@ -62,13 +56,20 @@ class PortfolioController extends Controller
 
     public function edit(Portfolio $portfolio)
     {
-        //
+        return view('portfolio.edit', ['portfolio' => $portfolio]);
     }
 
 
     public function update(Request $request, Portfolio $portfolio)
     {
-        //
+        $portfolio->update([
+            'title' => $request->input('title'),
+            'altText' => $request->input('altText'),
+            'category' => $request->input('category'),
+        ]);
+
+        return redirect(route('portfolio.manage'));
+
     }
 
     public function destroy(Portfolio $portfolio)
@@ -84,5 +85,15 @@ class PortfolioController extends Controller
         $portfolio->delete();
 
         return redirect()->route('portfolio.manage')->with('success', 'Portfolio Image deleted successfully');
+    }
+
+    public function validatePortfolio()
+    {
+        $request->validate([
+            'title' => 'required',
+            'altText' => 'max:2021',
+            'category' => 'required',
+            'imagePath' => 'required|mimes:jpg, png, jpeg|max:5048'       
+        ]);
     }
 }
