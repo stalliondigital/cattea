@@ -11,6 +11,10 @@
     border-radius: 3rem;
 }
 
+[role=tab] {
+ border-color: transparent !important;
+}
+
 .portfolio-categories ul li a {
     border-radius: 5rem;
     transition: background-color 0.25s ease;
@@ -23,7 +27,9 @@
   padding: 3rem;
 
   .img-item {
-    flex: 1 1 20%;
+    @media screen and (min-width: 940px) {
+      flex: 1 1 20%;
+    }
     // max-width: 50%;
       margin: 0.5rem;
     img {

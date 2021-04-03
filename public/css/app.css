@@ -1093,6 +1093,10 @@ a.text-link:hover, a.text-link:focus {
   border-radius: 3rem;
 }
 
+[role=tab] {
+  border-color: transparent !important;
+}
+
 .portfolio-categories ul li a {
   border-radius: 5rem;
   transition: background-color 0.25s ease;
@@ -1105,8 +1109,12 @@ a.text-link:hover, a.text-link:focus {
   padding: 3rem;
 }
 .portfolio-images-container .img-item {
-  flex: 1 1 20%;
   margin: 0.5rem;
+}
+@media screen and (min-width: 940px) {
+  .portfolio-images-container .img-item {
+    flex: 1 1 20%;
+  }
 }
 .portfolio-images-container .img-item img {
   box-shadow: 0px 0px 47px rgba(0, 0, 0, 0.15);
