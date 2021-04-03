@@ -32,7 +32,7 @@ class PortfolioController extends Controller
     {
         $request->validate([
             'title' => 'required',
-            'altText' => 'required|max:2021',
+            'altText' => 'max:2021',
             'category' => 'required',
             'imagePath' => 'required|mimes:jpg, png, jpeg|max:5048'       
         ]);

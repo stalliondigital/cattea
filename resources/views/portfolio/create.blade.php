@@ -19,7 +19,8 @@
                             <small class="text-red-600">{{ $errors->first('title') }}
                             </small>
                         @enderror
-                        <input id="title" name="title" type="text" placeholder="Enter the title of the image"
+                        <input id="title" value="{{ old('title') }}" name="title" type="text"
+                            placeholder="Enter the title of the image"
                             class="mt-1 focus:ring-gray-500 text-gray-500 block placeholder-gray-300 border-gray-300 rounded-2xl bg-gray-100 w-80">
                     </div>
 
@@ -30,7 +31,8 @@
                             <small class="text-red-600">{{ $errors->first('altText') }}
                             </small>
                         @enderror
-                        <input id="altText" name="altText" type="text" placeholder="Describe the image"
+                        <input id="altText" value="{{ old('altText') }}" name="altText" type="text"
+                            placeholder="Describe the image"
                             class="mt-1 focus:ring-gray-500 text-gray-500 block placeholder-gray-300 border-gray-300 rounded-2xl bg-gray-100 w-80">
                     </div>
 
@@ -63,7 +65,7 @@
                             <small class="text-red-600">{{ $errors->first('imagePath') }}
                             </small>
                         @enderror
-                        <input name="imagePath" type="file"
+                        <input value="{{ old('imagePath') }} " name="imagePath" type="file"
                             class="mt-1 text-gray-500 block  rounded-2xl p-5 bg-gray-100 w-80">
                     </div>
 

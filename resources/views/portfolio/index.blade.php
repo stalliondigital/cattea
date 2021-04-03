@@ -24,9 +24,9 @@
             </ul>
         </div>
 
-        <div class="portfolio-images-container">
+        <div>
 
-            <div id="all">
+            <div id="all" class="portfolio-images-container">
                 @foreach ($portfolio as $item)
                     <div class="img-item">
                         <a data-fancybox="all" data-options='{"caption" : "{{ $item->title }}"}'

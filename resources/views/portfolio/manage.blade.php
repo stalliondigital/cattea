@@ -35,12 +35,8 @@
                                                         class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
                                                         Category
                                                     </th>
-                                                    <th scope="col"
-                                                        class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                                                        Path
-                                                    </th>
                                                     <th scope="col" class="relative px-6 py-3">
-                                                        <span class="sr-only">Edit</span>
+                                                        <span class="sr-only">Actions</span>
                                                     </th>
                                                 </tr>
                                             </thead>
@@ -75,9 +71,9 @@
                                                             </span>
                                                         </td>
                                                         {{-- Path --}}
-                                                        <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                        {{-- <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                                                             {{ $item->imagePath }}
-                                                        </td>
+                                                        </td> --}}
                                                         {{-- Actions --}}
                                                         <td
                                                             class="px-6 py-4 whitespace-nowrap text-right text-sm font-medium">
