@@ -38,7 +38,7 @@
                 @endforeach
             </div>
 
-            <div id="landscape">
+            <div id="landscape" class="portfolio-images-container">
                 @foreach ($portfolio as $item)
                     @if ($item->category == 'Landscape')
                         <div class="img-item">
@@ -52,7 +52,7 @@
                 @endforeach
             </div>
 
-            <div id="portraits">
+            <div id="portraits" class="portfolio-images-container">
                 @foreach ($portfolio as $item)
                     @if ($item->category == 'Portraits')
                         <div class="img-item">
@@ -66,7 +66,7 @@
                 @endforeach
             </div>
 
-            <div id="pets">
+            <div id="pets" class="portfolio-images-container">
                 @foreach ($portfolio as $item)
                     @if ($item->category == 'Pets')
                         <div class="img-item">
@@ -80,7 +80,7 @@
                 @endforeach
             </div>
 
-            <div id="astrophotography">
+            <div id="astrophotography" class="portfolio-images-container">
                 @foreach ($portfolio as $item)
                     @if ($item->category == 'Astrophotography')
                         <div class="img-item">
@@ -94,7 +94,7 @@
                 @endforeach
             </div>
 
-            <div id="lifestyle">
+            <div id="lifestyle" class="portfolio-images-container">
                 @foreach ($portfolio as $item)
                     @if ($item->category == 'Lifestyle')
                         <div class="img-item">
@@ -108,7 +108,7 @@
                 @endforeach
             </div>
 
-            <div id="pottery">
+            <div id="pottery" class="portfolio-images-container">
                 @foreach ($portfolio as $item)
                     @if ($item->category == 'Pottery')
                         <div class="img-item">
@@ -122,7 +122,7 @@
                 @endforeach
             </div>
 
-            <div id="painting">
+            <div id="painting" class="portfolio-images-container">
                 @foreach ($portfolio as $item)
                     @if ($item->category == 'Painting')
                         <div class="img-item">
@@ -135,10 +135,9 @@
                     @endif
                 @endforeach
             </div>
-
+            {{-- <span class="img-item break"></span>
             <span class="img-item break"></span>
-            <span class="img-item break"></span>
-            <span class="img-item break"></span>
+            <span class="img-item break"></span> --}}
         </div>
         {{ $portfolio->links() }}
     </section>

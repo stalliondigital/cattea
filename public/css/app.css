@@ -1100,50 +1100,17 @@ a.text-link:hover, a.text-link:focus {
 
 .portfolio-images-container {
   display: flex;
-  flex-flow: column wrap;
-  align-content: space-between;
-  /* Your container needs a fixed height, and it 
-   * needs to be taller than your tallest column. */
-  height: 960px;
-  /* Optional */
-  width: 80%;
-  margin: 30px auto;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  padding: 3rem;
 }
-
-.img-item {
-  width: 24%;
-  margin: 2rem 0.5rem;
-  margin: 1rem;
+.portfolio-images-container .img-item {
+  flex: 1 1 20%;
+  margin: 0.5rem;
 }
-.img-item img {
+.portfolio-images-container .img-item img {
   box-shadow: 0px 0px 47px rgba(0, 0, 0, 0.15);
   border-radius: 5px;
-}
-
-/* Re-order items into 3 rows */
-.img-item:nth-of-type(4n+1) {
-  order: 1;
-}
-
-.img-item:nth-of-type(4n+2) {
-  order: 2;
-}
-
-.img-item:nth-of-type(4n+3) {
-  order: 3;
-}
-
-.img-item:nth-of-type(4n) {
-  order: 4;
-}
-
-/* Force new columns */
-.break {
-  flex-basis: 100%;
-  width: 0;
-  margin: 0;
-  content: "";
-  padding: 0;
 }
 
 .swiper-box {
