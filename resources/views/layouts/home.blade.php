@@ -79,7 +79,7 @@
                         <li><a href="{{ route('home') }}">Home</a></li>
                         <li><a href="{{ route('about') }}">About</a></li>
                         <li><a href="{{ route('portfolio.index') }}">Portfolio</a></li>
-                        <li><a href="{{ route('contact') }}">Contact</a></li>
+                        <li><a href="{{ route('contact.index') }}">Contact</a></li>
                     </ul>
                     <ul class="nav-social-links" role="navigation">
                         <h3>Social Links</h3>
@@ -124,7 +124,8 @@
             </div>
 
             {{-- Get In Touch Button --}}
-            <div class="header-cta-button"><a class="btn btn-round" href="{{ route('contact') }}">Get in Touch</a>
+            <div class="header-cta-button"><a class="btn btn-round" href="{{ route('contact.index') }}">Get in
+                    Touch</a>
             </div>
         </header>
 
@@ -158,7 +159,7 @@
                     <ul>
                         <li>Company</li>
                         <li><a href="{{ route('about') }}">About</a></li>
-                        <li><a href="{{ route('contact') }}">Contact</a></li>
+                        <li><a href="{{ route('contact.index') }}">Contact</a></li>
                         <li><a href="{{ route('home') }}#specialty">Specialty</a></li>
                     </ul>
                     <ul>

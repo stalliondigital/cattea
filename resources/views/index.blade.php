@@ -19,7 +19,7 @@
                 <h1>Vancouver based lifestyle, pet and landscape photography</h1>
                 <br>
                 <ul>
-                    <li><a href="{{ route('contact') }}">Book Session</a></li>
+                    <li><a href="{{ route('contact.index') }}">Book Session</a></li>
                     <li><a href="{{ route('portfolio.index') }}">View Work</a></li>
                 </ul>
                 <br>
@@ -46,7 +46,7 @@
                 </div>
 
                 <div class="process-card-content">
-                    <p>Use our <a href="{{ route('contact') }}">contact form</a> to get in touch with us and book an
+                    <p>Use our <a href="{{ route('contact.index') }}">contact form</a> to get in touch with us and book an
                         appointment. Setup a time that is most convenient for your situation.</p>
                 </div>
             </div>
@@ -139,7 +139,7 @@
                 <h5>Lifestyle Session</h5>
                 <h3>&dollar;300</h3>
                 <h6>Per hour</h6>
-                <a href="{{ route('contact') }}">Contact</a>
+                <a href="{{ route('contact.index') }}">Contact</a>
             </div>
 
             {{-- Pet Photo Session Pricing Card --}}
@@ -147,7 +147,7 @@
                 <h5>Pet Photo Session</h5>
                 <h3>&dollar;150</h3>
                 <h6>Per hour</h6>
-                <a href="{{ route('contact') }}">Contact</a>
+                <a href="{{ route('contact.index') }}">Contact</a>
             </div>
 
             {{-- Brand Photo Session Pricing Card --}}
@@ -155,7 +155,7 @@
                 <h5>Brand Photo Session</h5>
                 <h3>&dollar;50</h3>
                 <h6>Per hour</h6>
-                <a href="{{ route('contact') }}">Contact</a>
+                <a href="{{ route('contact.index') }}">Contact</a>
             </div>
         </div>
     </section>
@@ -208,7 +208,7 @@
             </div>
         </div>
         <p class="bg-gray-100 p-10 m-10 rounded-xl text-center mt-20 text-2xl">If you have any more questions, feel free to
-            <a class="text-link" href="{{ route('contact') }}">contact
+            <a class="text-link" href="{{ route('contact.index') }}">contact
                 me</a>
         </p>
     </section>

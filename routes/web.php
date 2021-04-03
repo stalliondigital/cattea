@@ -2,7 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PortfolioController;
-
+use App\Http\Controllers\ContactController;
+use App\Mail\ContactMail;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,15 +27,12 @@ Route::get('/about', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/portfolio/manage', [PortfolioController::class, 'manage'])->name('portfolio.manage');
 Route::resource('portfolio', PortfolioController::class);
 
+Route::get('/contact', [ContactController::class, 'index'])->name('contact.index');
 
-
-
-Route::get('/contact', function () {
-    return view('contact');
-})->name('contact');
-
+Route::post('/contact', [ContactController::class, 'store'])->name('contact.store');
 
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return view('dashboard');
 })->name('dashboard');
+
