@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Portfolio;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\File; 
+use Illuminate\Support\Facades\File;
 
 
 class PortfolioController extends Controller
@@ -13,7 +13,7 @@ class PortfolioController extends Controller
     {
         $portfolio = Portfolio::paginate(50);
 
-        return view ('portfolio.index', ['portfolio' => $portfolio]);
+        return view('portfolio.index', ['portfolio' => $portfolio]);
     }
 
     public function create()
@@ -25,7 +25,8 @@ class PortfolioController extends Controller
     {
         $portfolio = Portfolio::orderBy('category', 'DESC')->paginate(10);
 
-        return view ('portfolio.manage', ['portfolio' => $portfolio]);    }
+        return view('portfolio.manage', ['portfolio' => $portfolio]);
+    }
 
 
     public function store(Request $request)
@@ -44,7 +45,6 @@ class PortfolioController extends Controller
         ]);
 
         return redirect('/portfolio/manage');
-
     }
 
 
@@ -69,7 +69,6 @@ class PortfolioController extends Controller
         ]);
 
         return redirect(route('portfolio.manage'));
-
     }
 
     public function destroy(Portfolio $portfolio)
@@ -93,7 +92,7 @@ class PortfolioController extends Controller
             'title' => 'required',
             'altText' => 'max:2021',
             'category' => 'required',
-            'imagePath' => 'required|mimes:jpg, png, jpeg|max:5048'       
+            'imagePath' => 'required|mimes:jpg,png,jpeg|max:5048'
         ]);
     }
 }
