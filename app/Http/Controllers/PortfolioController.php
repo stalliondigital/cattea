@@ -89,7 +89,7 @@ class PortfolioController extends Controller
 
     public function validatePortfolio()
     {
-        $request->validate([
+        request()->validate([
             'title' => 'required',
             'altText' => 'max:2021',
             'category' => 'required',

@@ -189,16 +189,48 @@
             max-width: 70%;
         }
 
+        @media screen and (min-width: 1493px) {
+            max-width: 60%;
+        }
+
+        // @media screen and (min-width: 1720px) {
+        //     max-width: 50%;
+        // }
+
+        // @media screen and (min-width: 2040px) {
+        //     max-width: 40%;
+        // }
+
+        // @media screen and (min-width: 2560px) {
+        //     max-width: 35%;
+        // }
+
+        // @media screen and (min-width: 2768px) {
+        //     max-width: 30%;
+        // }
+
         h5.card-spc-long-text {
+            max-width: 110px;
+            overflow-x: hidden;
+            white-space: none;
+            text-overflow: ellipsis;
             @media screen and (min-width: 768px) {              
                 max-width: 41%;
-                overflow-x: hidden;
-                white-space: none;
-                text-overflow: ellipsis;
+                max-width: 120px;
             }
-            @media screen and (min-width: 869px) {
-                max-width: 100%;
+
+            @media screen and (min-width: 868px) {              
+                max-width: 41%;
+                max-width: 200px;
             }
+
+            // @media screen and (min-width: 1078px) {              
+            //     max-width: 41%;
+            //     max-width: 140px;
+            // }
+            // @media screen and (min-width: 869px) {
+            //     max-width: 100%;
+            // }
         }
 
         .specialty-card {
@@ -207,15 +239,21 @@
                 flex: 1 1 30%;
             }
             margin: 1rem;
-            display: flex;
-            flex-flow: row wrap;
-            align-items: center;
-            justify-content: center;
+
             transition: transform 0.5s ease;
+            max-width: 500px;
             &:hover {
                     transform: scale(1.03);
             }
             
+            &-content {
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1rem;
+                // background: pink;
+            }
             img {
                 flex-basis: 100%;
                 border-radius: 38px;
@@ -224,17 +262,19 @@
 
             h5 {
                 // display: inline;
-                padding: 1.25rem;
-                margin: 0.5rem 0;
+                // padding: 1.25rem;
+                // padding: 0.5rem 0.1rem;
+                // margin: 0.5rem 0;
                 margin-left: 1rem;
             }
 
             a {            
                 // padding: 1.25rem;
+
                 padding: 0.5rem 0.8rem;
                 margin: 0.5rem 0;
-                margin-left: auto;
-                margin-right: 2rem;
+                // margin-left: auto;
+                // margin-right: 2rem;
                 background-color: #f5f5f4;
                 color: var(--clr-dark-400);
                 border-radius: 8px;

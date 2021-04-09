@@ -11,9 +11,12 @@
                 <div class="swiper-slide"><img src="{{ asset('img/slideshow/slide-2.png') }}" alt=""></div>
                 <div class="swiper-slide"><img src="{{ asset('img/slideshow/slide-1.png') }}" alt=""></div>
                 <div class="swiper-slide"><img src="{{ asset('img/slideshow/slide-3.png') }}" alt=""></div>
-                <div class="swiper-slide"><img src="{{ asset('img/slideshow/slide-4.png') }}" alt=""></div>
-                <div class="swiper-slide"><img src="{{ asset('img/slideshow/slide-5.png') }}" alt=""></div>
-                <div class="swiper-slide"><img src="{{ asset('img/slideshow/slide-6.png') }}" alt=""></div>
+                <div class="swiper-slide"><img style="transform: translateY(-200px);"
+                        src="{{ asset('img/slideshow/slide-4.png') }}" alt=""></div>
+                <div class="swiper-slide"><img style="transform: translateY(-200px);"
+                        src="{{ asset('img/slideshow/slide-5.png') }}" alt=""></div>
+                <div class="swiper-slide"><img style="transform: translateY(-250px);"
+                        src="{{ asset('img/slideshow/slide-6.png') }}" alt=""></div>
             </div>
             <div class="main-title">
                 <h1>Vancouver based lifestyle, pet and landscape photography</h1>
@@ -23,7 +26,8 @@
                     <li><a href="{{ route('portfolio.index') }}">View Work</a></li>
                 </ul>
                 <br>
-                <p>Completed a session? <a href="#linktopixieset">Click here </a>to download your images.</p>
+                <p>Completed a session? <a href="https://catteaartistry.pixieset.com/">Click here </a>to download your
+                    images.</p>
             </div>
             <!-- If we need navigation buttons -->
             <nav class="swiper-nav">
@@ -102,26 +106,34 @@
         <div class="specialty-cards mt-20">
             <div class="card specialty-card">
                 <img loading="lazy" src="{{ asset('img/specialty/pets.jpg') }}" alt="pets">
-                <h5>Pets</h5>
-                <a href="{{ route('portfolio.index') }}#pets">View Examples</a>
+                <div class="specialty-card-content">
+                    <h5>Pets</h5>
+                    <a href="{{ route('portfolio.index') }}#pets">View Examples</a>
+                </div>
             </div>
 
             <div class="card specialty-card">
                 <img loading="lazy" src="{{ asset('img/specialty/astrophotography.jpg') }}" alt="astrophotography">
-                <h5 class="card-spc-long-text">Astrophotography</h5>
-                <a href="{{ route('portfolio.index') }}#astrophotography">View Examples</a>
+                <div class="specialty-card-content">
+                    <h5 class="card-spc-long-text">Astrophotography</h5>
+                    <a href="{{ route('portfolio.index') }}#astrophotography">View Examples</a>
+                </div>
             </div>
 
             <div class="card specialty-card">
                 <img loading="lazy" src="{{ asset('img/specialty/lifestyle.jpg') }}" alt="lifestyle">
-                <h5>Lifestyle</h5>
-                <a href="{{ route('portfolio.index') }}#lifestyle">View Examples</a>
+                <div class="specialty-card-content">
+                    <h5>Lifestyle</h5>
+                    <a href="{{ route('portfolio.index') }}#lifestyle">View Examples</a>
+                </div>
             </div>
 
             <div class="card specialty-card">
                 <img loading="lazy" src="{{ asset('img/specialty/landscape.jpg') }}" alt="landscape">
-                <h5>Landscape</h5>
-                <a href="{{ route('portfolio.index') }}#landscape">View Examples</a>
+                <div class="specialty-card-content">
+                    <h5>Landscape</h5>
+                    <a href="{{ route('portfolio.index') }}#landscape">View Examples</a>
+                </div>
             </div>
         </div>
 
@@ -130,7 +142,7 @@
 
     <section class="mt-10 md:mb-10 md:ml-20 md:mr-10 pricing-section">
         <header>
-            <h2 class="section-title">Interested in Shooting with Me?</h2>
+            <h2 class="section-title">Interested in a session with me?</h2>
             <h4 class="section-subtitle">Simple and transparent pricing</h4>
         </header>
         <div class="pricing-cards">
@@ -185,7 +197,8 @@
                 <h3>How long before I receive my fully edited images and do you provide digital files or prints?</h3>
                 <p>Retouching and color grading can take up to 10 business days. If you would like to put in a rush order
                     for your images, we can arrange that for a supplementary fee. After post production, your photos will be
-                    uploaded and <a href="#link-to-pixieset">available for download</a>. If you would like to have prints of
+                    uploaded and <a href="https://catteaartistry.pixieset.com/">available for download</a>. If you would
+                    like to have prints of
                     your photos, we can provide you
                     with high quality prints for an additional fee. We can discuss what you are looking for before or after
                     the session. </p>

@@ -16,7 +16,7 @@
                 <li><a target="_blank" href="https://instagram.com/cattea_artistry"><i class="fab fa-instagram"></i>
                         &commat;cattea_artistry</a>
                 </li>
-                <li><a href="https://instagram.com/cattea_pottery"><i class="fab fa-instagram"></i>
+                <li><a target="_blank" href="https://instagram.com/cattea_pottery"><i class="fab fa-instagram"></i>
                         &commat;cattea_pottery</a></li>
             </ul>
             <ul class="about-header-content-actions">

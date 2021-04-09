@@ -129,11 +129,11 @@
             </div>
         </header>
 
-        <main>
+        <main class="container mx-auto">
             @yield('content')
         </main>
 
-        <footer class="footer-main">
+        <footer class="footer-main container mx-auto">
             <div class="footer-main-content">
                 <div class="footer-left">
                     <div class="footer-logo">
@@ -171,7 +171,7 @@
                     <ul>
                         <li>Work</li>
                         <li><a href="{{ route('portfolio.index') }}">Portfolio</a></li>
-                        <li><a href="#link-to-pixieset">Client Gallery</a></li>
+                        <li><a href="https://catteaartistry.pixieset.com">Client Gallery</a></li>
                         @if (Auth::check())
                             <form method="POST" action="{{ route('logout') }}">
                                 @csrf
